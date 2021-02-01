@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8eefefba.chunk.css",
+    "main.js": "/static/js/main.90bbff16.chunk.js",
+    "main.js.map": "/static/js/main.90bbff16.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.992eac29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.992eac29.js.map",
+    "static/js/2.4b66e6ac.chunk.js": "/static/js/2.4b66e6ac.chunk.js",
+    "static/js/2.4b66e6ac.chunk.js.map": "/static/js/2.4b66e6ac.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.592180af51704bd6fecbfe4330f36f78.js": "/precache-manifest.592180af51704bd6fecbfe4330f36f78.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8eefefba.chunk.css.map": "/static/css/main.8eefefba.chunk.css.map",
+    "static/js/2.4b66e6ac.chunk.js.LICENSE.txt": "/static/js/2.4b66e6ac.chunk.js.LICENSE.txt",
+    "static/media/Bg-02.jpg": "/static/media/Bg-02.2bac5af6.jpg",
+    "static/media/Bl-logo.png": "/static/media/Bl-logo.6600f1f5.png",
+    "static/media/Family-Dogs.jpg": "/static/media/Family-Dogs.75b482e4.jpg",
+    "static/media/Headshot-01.jpg": "/static/media/Headshot-01.16d3696b.jpg",
+    "static/media/eat-da-burger.JPG": "/static/media/eat-da-burger.cc678b77.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.992eac29.js",
+    "static/js/2.4b66e6ac.chunk.js",
+    "static/css/main.8eefefba.chunk.css",
+    "static/js/main.90bbff16.chunk.js"
+  ]
+}
