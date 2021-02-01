@@ -3,8 +3,6 @@ import HeadShot from "../Images/Headshot-01.jpg";
 import LogoBl from "../Images/Bl-logo.png";
 import Nav from "../components/Nav";
 import Footer from"../components/Footer";
-import API from "../utils/API";
-import { Link, useParams } from "react-router-dom";
 import "./style.css";
 import BackgroundImg from "../Images/Bg-02.jpg";
 

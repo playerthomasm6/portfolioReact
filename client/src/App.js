@@ -9,7 +9,7 @@ import NoMatch from "./pages/NoMatch";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="bg-dark">
         <Switch>
           <Route exact path="/">
             <Home />

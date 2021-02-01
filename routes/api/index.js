@@ -1,7 +1,11 @@
-const router = require("express").Router();
-const bookRoutes = require("./books");
+// ===============================================================
+//         SAMPLE CODE FOR FUTURE DEVELOPMENT
+// ===============================================================
 
-// Book routes
-router.use("/home", bookRoutes);
+// const router = require("express").Router();
+// const bookRoutes = require("./books");
 
-module.exports = router;
+// // Book routes
+// router.use("/home", bookRoutes);
+
+// module.exports = router;

@@ -11,7 +11,7 @@ function About(props) {
   return (
     <div className="bg-dark">
 <Nav/>
-  <section className="row row-margin-fix">
+  <section className="row row-margin">
 
     <div className="col-sm-1"></div>
 
@@ -41,17 +41,17 @@ function About(props) {
           <li>JavaScript</li>
           <li>JQUERY</li>
           <li>JSNode</li>
-          <li>MYSQL</li>
-          <li>Mongo</li>
+          
         </ul>
         
   
       <div className="col-sm-4">
         <ul>
-          <li>JS node</li>
-          <li>Bootstrap</li>
+          <li>MYSQL</li>
+          <li>NoSQL</li>
+          <li>JS Node</li>
           <li>React</li>
-          <li>Materilize</li>
+          <li>Bootstrap</li>
           <li>Materilize</li>
         </ul>
       </div>
