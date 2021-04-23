@@ -1,71 +1,114 @@
-import React from "react";
+import React, {useState, useEffect, useContext} from "react";
 import DefaultImage from "../Images/150x150.png"
+
+import Nav from "../components/Nav";
+import "./style.css";
+import Footer from"../components/Footer";
+import PortfolioWindow from "../components/PortfolioWindow";
+
+// IMAGE IMPORTS
 import EatDaBurger from "../Images/eat-da-burger.JPG"
 import RadicalGames from "../Images/radicalGames.JPG"
 import NoteTaker from "../Images/noteTaker.JPG"
 import Tipster from "../Images/tipster.JPG"
-import Nav from "../components/Nav";
-import "./style.css";
-import Footer from"../components/Footer";
+import BackArrow from "../Images/icons8-back-to-64.png"
+import ForwardArrow from "../Images/icons8-next-page-64.png"
 
 
 function Portfolio(props) {
+
+  const [projectIndex, setprojectIndex] = useState(0) // State for used to set projectData Array current index
+
+  const projectData = [ // Data Array which includes all project data... images, descriptions, titles etc.
+    {
+      image: EatDaBurger,
+      imageAlt: "Screenshot",
+      url: "https://calm-anchorage-67744.herokuapp.com/",
+      title: "Eat-Da-Burger",
+      description: "Eat the burger is a simple app to allow a user to create burger names.  The “burgers” can then be eaten and added to a new list."
+    },
+    {
+      image: RadicalGames,
+      imageAlt: "Screenshot",
+      url: "https://raticles.herokuapp.com/index.html",
+      title: "Radical Gamez",
+      description: "Radical Games is a web app which allows a user to search games and add them to a wish list."
+    },
+    {
+      image: NoteTaker,
+      imageAlt: "Screenshot",
+      url: "https://limitless-reaches-25124.herokuapp.com/notes",
+      title: "Note Taker App",
+      description: "This app allows a user to create notes and save them to view or edit later."
+    },
+    {
+      image: Tipster,
+      imageAlt: "Screenshot",
+      url: "https://playerthomasm6.github.io/tipster/",
+      title: "Tipster",
+      description: "This app allows the user to search any movie or television show and using an algorithm pairs a beer with the movie."
+    }
+  ]
+
+  const cycleProjectIndex = (e, value) => { // Controles index cycle for projectData
+    e.preventDefault();
+  if (value === "down" & projectIndex > 0) { //cycle index down for index greater than 0
+    setprojectIndex(projectIndex - 1)
+
+  } else if (value === "down" & projectIndex === 0 ) { // cycle index to projectData highest index if === 0
+    setprojectIndex(projectData.length -1)
+  }
+
+  else if (value === "up" & projectIndex < (projectData.length - 1)) { // cycle index up if index is less than highest index
+    setprojectIndex(projectIndex + 1)
+
+  } else if (value === "up" & projectIndex === (projectData.length -1)) { // cycle index to 0 if index is === highest index
+    setprojectIndex(0)
+  }
+}
  
   return (
-    <div className="bg-dark">
+    <div >
       <Nav/>
-    <section class="container">
+
+    <section className="container">
+
+      <div className="row">
+
+      <div className="col-sm-1">
+      <img
+      className="arrow-button"
+      src={BackArrow}
+      onClick ={e => {cycleProjectIndex(e, "down")}}
+      />
+      </div>
+
+      <div className="col-sm-10">
+      <PortfolioWindow
+        image = {projectData[projectIndex].image}
+        imageAlt = {projectData[projectIndex].imageAlt}
+        url = {projectData[projectIndex].url}
+        title = {projectData[projectIndex].title}
+        description = {projectData[projectIndex].description}
+      />
+
+      </div>
+
+      <div className="col-sm-1">
+      <img 
+      className="arrow-button"
+      src={ForwardArrow}
+      onClick ={e => {cycleProjectIndex(e, "up")}}
+      />
+      </div>
     
-    <article id="portfolio" class="row">
+    
+
       
-      <div class="col-sm-2">
-        <img id="image-border" src={EatDaBurger} alt="Headshot" class="img-thumbnail headshot"/>
-      </div>
 
-      <div id="portfolio" class="col-sm-10 bg-dark">
-        <h3><a href="https://calm-anchorage-67744.herokuapp.com/">Eat-Da-Burger</a></h3>
-        <p>Eat the burger is a simple app to allow a user to create burger names.  
-          The “burgers” can then be eaten and added to a new list.
-        </p>
-      </div>
-    </article>
+</div>
 
-    <article id="portfolio" class="row">
-
-      <div class="col-sm-2">
-        <img id="image-border" src={RadicalGames} alt="Headshot" class="img-thumbnail headshot"/>
-      </div>
-
-      <div id="portfolio" class="col-sm-10 bg-dark">
-        <h3><a href="https://raticles.herokuapp.com/index.html">Radical Gamez</a></h3>
-        <p>Radical Games is a web app which allows a user to search games and add them to a wish list.
-        </p>
-      </div>
-    </article>
-
-    <article id="portfolio" class="row">
-      <div class="col-sm-2">
-        <img id="image-border" src={NoteTaker} alt="Headshot" class="img-thumbnail headshot"/>
-      </div>
-
-      <div id="portfolio" class="col-sm-10 bg-dark">
-        <h3><a href="https://limitless-reaches-25124.herokuapp.com/notes">Note Taker App</a></h3>
-        <p>This app allows a user to create notes and save them to view or edit later.
-        </p>
-      </div>
-    </article>
-
-    <article id="portfolio" class="row">
-      <div class="col-sm-2">
-        <img id="image-border" src={Tipster} alt="Headshot" class="img-thumbnail headshot"/>
-      </div>
-
-      <div id="portfolio" class="col-sm-10 bg-dark">
-        <h3><a href="https://playerthomasm6.github.io/tipster/">Tipster</a></h3>
-        <p>This app allows the user to search any movie or television show and using an algorithm pairs a beer with the movie.
-        </p>
-      </div>
-    </article>
+    
   </section>
   <br/><br/><br/><br/>
   <Footer/>

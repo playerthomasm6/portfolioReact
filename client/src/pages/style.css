@@ -111,3 +111,8 @@ picture img {
 .margin-bottom-textbox{
     margin-bottom: 5%;
 }
+
+
+.arrow-button:hover {
+    cursor: pointer;
+}
