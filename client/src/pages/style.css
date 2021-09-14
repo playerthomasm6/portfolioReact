@@ -1,3 +1,54 @@
+/*HOME PAGE */
+body {
+    height: 100%;
+}
+
+
+.row-height {
+    height:80%;
+}
+
+.full-view { /* Makes component take up entire screen */
+    min-height: 100vh;
+    
+}
+
+.main-info {
+    border: 2px solid orange;
+    height: 100%;
+}
+
+
+
+
+/*HOME PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 article h1{
     padding-left: 20px;
     padding-top: 10%;

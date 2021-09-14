@@ -2,13 +2,14 @@ import React from "react";
 import Nav from "../components/Nav";
 import "./style.css";
 import Footer from"../components/Footer";
+import Header from "../components/Header";
 
 
 function Contact() {
 
   return (
   <div className="bg-dark">
-   <Nav/>
+   <Header/>
   <form id="contact-form" method="post" action="contact.php" role="form">
 
     <div className="messages"></div>

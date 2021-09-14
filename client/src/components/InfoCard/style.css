@@ -1,0 +1,14 @@
+.even-spaces {
+    margin: 2% auto 2% auto ;
+
+}
+
+.center-text {
+    text-align: center;
+}
+
+.border-time {
+    border: solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import HeadShot from "../Images/Headshot-01.jpg";
 import FamilyDogs from "../Images/Family-Dogs.jpg";
-import Nav from "../components/Nav";
+import Header from "../components/Header";
 import "./style.css";
 import Footer from"../components/Footer";
 
@@ -10,7 +10,7 @@ function About(props) {
 
   return (
     <div className="bg-dark">
-<Nav/>
+<Header/>
   <section className="row row-margin">
 
     <div className="col-sm-1"></div>

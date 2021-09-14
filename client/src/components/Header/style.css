@@ -1,0 +1,87 @@
+.header-container { /* sets height relitive to parent container */
+    min-height: 20vh;
+    object-fit: contain;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.row-height {
+    height: 100%;
+}
+
+.profile-container {
+    text-align: center;
+    
+}
+
+.fit {
+    height: fit-content;
+}
+
+.profile-image {
+    margin: 2% auto;
+    padding-bottom: 1%;
+}
+
+#profile-image-id {
+    object-fit: contain;
+    width: 60%;
+    height: 60%;
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.set-height {
+    height: 100%;
+}
+
+.border {
+    
+    border: 2px solid red;
+}
+
+/* NAVIGATION */
+
+.nav-content {
+    position: relative;
+    padding-top: auto;
+    bottom: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+/* sets height of child to match parent container */
+
+.nav-text {
+    font-size: 3vw;
+    color: white;
+}
+
+@media (min-width: 544px) {
+.nav-text {
+    font-size: 2.8vw;
+}
+
+}
+
+@media (min-width: 768px) {
+    .nav-text {
+        font-size: 2.5vw;
+    }
+    
+    }
+
+@media (min-width: 992px) {
+    .nav-text {
+            font-size: 2vw;
+    }
+        
+    }
+
+@media (min-width: 1200px) {
+    .nav-text {
+            font-size: 1.5vw;
+    }
+       
+    } 

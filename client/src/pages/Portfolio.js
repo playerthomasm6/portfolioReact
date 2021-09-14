@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import "./style.css";
 import Footer from"../components/Footer";
 import PortfolioWindow from "../components/PortfolioWindow";
+import Header from "../components/Header";
 
 // IMAGE IMPORTS
 import EatDaBurger from "../Images/eat-da-burger.JPG"
@@ -69,7 +70,7 @@ function Portfolio(props) {
  
   return (
     <div >
-      <Nav/>
+      <Header/>
 
     <section className="container">
 
