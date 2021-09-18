@@ -5,7 +5,7 @@ body {
 
 
 .row-height {
-    height:80%;
+    height:60vh;
 }
 
 .full-view { /* Makes component take up entire screen */
@@ -15,16 +15,29 @@ body {
 
 .main-info {
     border: 2px solid orange;
+    background-color: aqua;
+    min-height: 100%;
+}
+
+.main-image-container {
+    border: 2px solid orange;
+    background-color: aqua;
     height: 100%;
 }
 
-
+.r100 {
+    height:100%;
+}
 
 
 /*HOME PAGE */
 
 
-
+.img-size {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 
 

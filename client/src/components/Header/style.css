@@ -26,10 +26,10 @@
 
 #profile-image-id {
     object-fit: contain;
-    width: 60%;
-    height: 60%;
-    max-width: 60%;
-    max-height: 60%;
+    width: 40%;
+    height: 40%;
+    max-width: 40%;
+    max-height: 40%;
 }
 
 .set-height {
@@ -51,7 +51,22 @@
     width: 100%;
 }
 
+.row-90 {
+    height: 80%;
+}
+
 /* sets height of child to match parent container */
+
+.nav-design {
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.nav-design:hover {
+    border: 1px solid blue;
+    border-radius: 15px;
+    
+}
 
 .nav-text {
     font-size: 3vw;

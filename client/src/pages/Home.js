@@ -5,6 +5,7 @@ import Footer from"../components/Footer";
 import Header from"../components/Header";
 import "./style.css";
 import BackgroundImg from "../Images/Bg-02.jpg";
+import KeyboardImg from "../Images/keyboard-blue-splash.png";
 
 function Home() {
 
@@ -12,13 +13,13 @@ function Home() {
       <div className="full-view">
         <Header/>
           <div className="container-fluid row-height">
-            <div className="row">
+            <div className="row r100">
               
-              <div className='col-sm-3'>
-                <h1>Test</h1>
+              <div className='col-sm-3 col-3 main-image-container'>
+                <img className="img-size" src={KeyboardImg}></img>
               </div>
 
-              <div className='col-sm-9 main-info'>
+              <div className='col-sm-9 col-9 main-info'>
                 
                 <h1>Test</h1>
               </div>

@@ -1,11 +1,8 @@
 .footer {
+    background-color: black;
     width: 100%;
-    height: 5%;
-    margin-top: 1%;
+    height: 20vh;
     color: whitesmoke;
-    border: solid;
-
-    border-color: rgb(212, 131, 38);
 }
 
 .center {
@@ -14,3 +11,4 @@
     padding-bottom: auto;
     justify-content: center;
 }
+
