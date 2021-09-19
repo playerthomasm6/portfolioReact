@@ -23,7 +23,7 @@ function Home() {
                 
                 <section className="content-title-box">
                 <h1 className="content-title">Web Development</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                <p className="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                   Obcaecati impedit tenetur beatae! Neque repellendus dicta illo 
                   facere exercitationem voluptas totam nam quia, nemo dolore facilis 
                   obcaecati tempora ipsa itaque nostrum placeat minima at. Ab, at atque. 
