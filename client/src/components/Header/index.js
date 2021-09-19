@@ -10,11 +10,9 @@ import Profile from "../../Images/Headshot-01.jpg"
 
 function Header(props) {
     return (
-        <div className="container-fluid header-container">
+            <div className="row header-container">
 
-            <div className="row">
-
-                <div className="col-md-4 col-sm-3 col-12 profile-container">
+                <div className="col-md-2 col-sm-2 col-12 profile-container">
 
                     <div className="row">
                         <div className="col-sm-12 set-height">
@@ -28,7 +26,7 @@ function Header(props) {
 
                 </div>
 
-                <div className="col-md-8 col-sm-10 col-12 profile-container">
+                <div className="col-md-10 col-sm-10 col-12 profile-container">
 
                     <div className="row row-90 d-none d-sm-block">
                         <div className="col-sm-12">
@@ -73,11 +71,7 @@ function Header(props) {
 
 
             </div>
-            
-
-                
-            
-        </div>
+        
     );
 }
 

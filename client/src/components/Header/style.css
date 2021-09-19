@@ -1,9 +1,13 @@
+:root {
+    --profile-size: 60%
+}
+
 .header-container { /* sets height relitive to parent container */
     min-height: 20vh;
-    object-fit: contain;
     background-color: black;
     color: white;
     margin: 0;
+    padding: 1%;
 }
 
 .row-height {
@@ -26,10 +30,10 @@
 
 #profile-image-id {
     object-fit: contain;
-    width: 40%;
-    height: 40%;
-    max-width: 40%;
-    max-height: 40%;
+    width: var(--profile-size);
+    height: var(--profile-size);
+    max-width: var(--profile-size);
+    max-height: var(--profile-size);
 }
 
 .set-height {
@@ -83,6 +87,7 @@
 @media (min-width: 768px) {
     .nav-text {
         font-size: 2.5vw;
+        
     }
     
     }

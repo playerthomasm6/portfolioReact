@@ -10,18 +10,26 @@ import KeyboardImg from "../Images/keyboard-blue-splash.png";
 function Home() {
 
     return (
-      <div className="full-view">
+      <div className="container-fluid full-view bg-dark">
         <Header/>
           <div className="container-fluid row-height">
             <div className="row r100">
               
-              <div className='col-sm-3 col-3 main-image-container'>
+              <div className='col-sm-2 col-12 d-none d-sm-block main-image-container'>
                 <img className="img-size" src={KeyboardImg}></img>
               </div>
 
-              <div className='col-sm-9 col-9 main-info'>
+              <div className='col-sm-10 col-12 main-info'>
                 
-                <h1>Test</h1>
+                <section className="content-title-box">
+                <h1 className="content-title">Web Development</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                  Obcaecati impedit tenetur beatae! Neque repellendus dicta illo 
+                  facere exercitationem voluptas totam nam quia, nemo dolore facilis 
+                  obcaecati tempora ipsa itaque nostrum placeat minima at. Ab, at atque. 
+                  Maxime nostrum cum debitis sint dolorum optio minus totam est eaque. 
+                  Voluptates, adipisci beatae?</p>
+                </section>
               </div>
 
             </div>
