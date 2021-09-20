@@ -17,7 +17,7 @@ body {
 }
 
 .main-info {
-    background-color: rgb(197, 202, 216);
+    background: linear-gradient(90deg, rgb(0, 18, 27) 0%, rgb(55, 99, 139) 25%,rgb(95, 162, 190) 50%,rgb(207, 221, 226) 75%);
     min-height: 100%;
 }
 
@@ -42,12 +42,12 @@ body {
 .content-title-box {
     border: 1px solid rgba(0, 0, 255, 0.164);
     border-radius: 30px;
-    padding: 1.5%;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 6%;
+    margin-bottom: 0;
+    margin-left: 15%;
+    margin-right: 15%;
     box-shadow: 5px 5px 5px 5px rgba(0, 195, 255, 0.109);
-    background-color: rgba(245, 245, 245, 0.37);
+    background-color: rgba(255, 255, 255, 0.39);
 
 }
 

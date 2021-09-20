@@ -23,7 +23,7 @@ function Home() {
                 
                  <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-wrapper">
 
-                  <section className="col-10 content-title-box">
+                  <section className="col-8 content-title-box">
                 <h1 className="content-title">Web Development</h1>
                 <p className="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                   Obcaecati impedit tenetur beatae! Neque repellendus dicta illo 
@@ -33,7 +33,7 @@ function Home() {
                   Voluptates, adipisci beatae?</p>
                   </section>
 
-                <section className="col-10 content-title-box">
+                <section className="col-8 content-title-box">
                 <h1 className="content-title">Graphic Design</h1>
                 <p className="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                   Obcaecati impedit tenetur beatae! Neque repellendus dicta illo 
