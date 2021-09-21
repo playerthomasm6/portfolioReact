@@ -3,7 +3,7 @@
 }
 
 .header-container { /* sets height relitive to parent container */
-    min-height: 20vh;
+    
     background: linear-gradient(85deg, rgb(0, 0, 0) 0%, rgb(34, 34, 34) 25%,rgb(0, 0, 0) 50%,rgb(37, 37, 37) 75%);;
     color: white;
     margin: 0;

@@ -9,6 +9,8 @@ import KeyboardImg from "../Images/keyboard-blue-splash.png";
 
 function Home() {
 
+  
+
     return (
       <div className="container-fluid full-view bg-dark">
         <Header/>
@@ -25,13 +27,24 @@ function Home() {
 
                   <section className="col-8 content-title-box">
                 <h1 className="content-title">Web Development</h1>
-                <p className="main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                <p className="main-text">
+                  This Site is to demonstrate some of my knowledge and ablities with web developement
+                  BackgroundImgObcaecati impedit tenetur beatae! Neque repellendus dicta illo
+                  facere exercitationem voluptas totam nam quia, nemo dolore facilis 
+                  obcaecati tempora ipsa itaque nostrum placeat minima at. Ab, at atque. 
+                  Maxime nostrum cum debitis sint dolorum optio minus totam est eaque. 
+                  Voluptates, adipisci</p>
+                  </section>
+
+                <section className="col-8 content-title-box">
+                <h1 className="content-title">Graphic Design</h1>
+                <p className="main-text" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                   Obcaecati impedit tenetur beatae! Neque repellendus dicta illo 
                   facere exercitationem voluptas totam nam quia, nemo dolore facilis 
                   obcaecati tempora ipsa itaque nostrum placeat minima at. Ab, at atque. 
                   Maxime nostrum cum debitis sint dolorum optio minus totam est eaque. 
-                  Voluptates, adipisci beatae?</p>
-                  </section>
+                  Voluptates, adipisci </p>
+                </section>
 
                 <section className="col-8 content-title-box">
                 <h1 className="content-title">Graphic Design</h1>

@@ -1,4 +1,8 @@
 /*HOME PAGE */
+html {
+    height: 100%;
+}
+
 body {
     height: 100%;
 }
@@ -9,7 +13,6 @@ body {
 }
 
 .full-view { /* Makes component take up entire screen */
-    min-height: 100vh;
     width: 100%;
     border: none;
     padding: 0;
@@ -17,8 +20,9 @@ body {
 }
 
 .main-info {
-    background: linear-gradient(90deg, rgb(0, 18, 27) 0%, rgb(55, 99, 139) 25%,rgb(95, 162, 190) 50%,rgb(207, 221, 226) 75%);
+    background: linear-gradient(90deg, rgb(10, 8, 24) 0%, rgb(55, 99, 139) 25%,rgb(95, 162, 190) 50%,rgb(207, 221, 226) 75%);
     min-height: 100%;
+    box-shadow: inset 0px 0px 30px rgba(7, 89, 136, 0.616);
 }
 
 .main-image-container {
@@ -26,12 +30,33 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
+    
+}
+
+div::-webkit-scrollbar {
+    width: 12px;
+}
+
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 
-
-
 /*HOME PAGE */
+
+.colorChanger:hover {
+    cursor: pointer;
+    
+}
+
 
 .scrolling-wrapper{
     overflow-x: auto;
@@ -56,6 +81,7 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
 }
 
 .r100 {
@@ -74,6 +100,7 @@ body {
 
 .main-text {
     font-size: .75em;
+    text-shadow: 1px 1px 1px rgba(0, 18, 27, 0.383);
 }
 
 @media (min-width: 544px) {
