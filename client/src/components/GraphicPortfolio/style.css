@@ -1,0 +1,30 @@
+.scrolling-x {
+    overflow-x: auto;
+    background-color: white;
+}
+
+.image-box {
+    border: 2px solid rgba(0, 140, 255, 0.315);
+    margin: 1%;
+
+
+}
+
+.boundry {
+    margin-left: 10%;
+    padding: 0;
+    
+    
+    
+
+}
+
+.img-style {
+    width: 250px;
+}
+
+.background-color-button {
+    height: 25px;
+    width: 75px;
+    box-shadow: inset 0 0 6px rgb(0, 0, 0);
+}

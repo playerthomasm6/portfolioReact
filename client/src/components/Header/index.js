@@ -51,7 +51,7 @@ function Header(props) {
                                     <a className="nav-link" href="/portfolio"><h4 className="nav-text">Web Development</h4></a>
                                 </li>
                                 <li className="nav-item nav-design">
-                                    <a className="nav-link" href="/contact"><h4 className="nav-text">Graphic Design</h4></a>
+                                    <a className="nav-link" href="/graphic-design"><h4 className="nav-text">Graphic Design</h4></a>
                                 </li>
                             </ul>
 
