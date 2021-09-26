@@ -1,8 +1,4 @@
-.scrolling-x {
-    overflow-x: auto;
-    background-size: 100% 100%;
-    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0.774))
-}
+
 
 .image-box {
     border: 2px solid rgba(0, 140, 255, 0.103);

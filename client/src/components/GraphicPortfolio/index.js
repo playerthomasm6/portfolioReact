@@ -34,8 +34,6 @@ const chooseColor = (a) => {
 
     return (
             
-            
-            <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-x">
                 <div className="col-sm-5 col-10 d-flex justify-content-center text-center boundry">
                     
                     
@@ -45,7 +43,7 @@ const chooseColor = (a) => {
                         
                         <div className="description-box">
                             <h4 className="title-card">{props.title}</h4>
-                            <p>This logo was designed for Court House Fitness for t-shirts.</p>
+                            <p>{props.descriptionText}</p>
 
                         </div>
                         
@@ -53,35 +51,6 @@ const chooseColor = (a) => {
                     </div>
                 </div>
                 
-                <div className="col-sm-5 col-10 d-flex justify-content-center text-center boundry">
-                    <div className="image-box">
-                        <img src={props.imageSource} alt={props.imageAlt} className="img-thumbnail img-style" style={styles0}></img>
-                        <h4 className="title-card">{props.title}</h4>
-
-                        
-                    </div>
-                    
-                </div>
-
-                <div className="col-sm-5 col-10 d-flex justify-content-center text-center boundry">
-                    <div className="image-box">
-                        <img src={props.imageSource} alt={props.imageAlt} className="img-thumbnail img-style " style={styles0}></img>
-                        <h4 className="title-card">{props.title}</h4>
-
-                        <button className="background-color-button" style={styles1} onClick={() => chooseColor(0)}
-                        ></button>
-                        <button className="background-color-button" style={styles2}
-                        onClick={() => chooseColor(1)}
-                        ></button>
-                        <button className="background-color-button" style={styles3}
-                        onClick={() => chooseColor(2)}
-                    ></button>
-                    </div>
-                    
-                </div>
-                
-            </div>
-        
     );
 }
 
