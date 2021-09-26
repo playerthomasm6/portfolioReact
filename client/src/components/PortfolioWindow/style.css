@@ -1,3 +1,67 @@
+p {
+    font-size: 1em;
+    padding: 1%;
+    margin: 0;
+}
+
+.row-style {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+
 .white-text{
     color: white;
+}
+
+
+.image-box-style { /*Container for portfolio image*/
+    justify-content: center;
+    text-align: center;
+    height: 15vh;
+}
+
+@media (min-width: 544px) {
+    .image-box-style { /*Container for portfolio image*/
+        justify-content: center;
+        text-align: center;
+        height: 40vh;
+    }
+}
+
+.image-style { /*Portfolio image*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.123);
+    
+}
+
+.arrow-button-box {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.arrow-button {
+    padding-right: auto;
+    padding-left: auto;
+    margin: auto;
+    border: 2px solid transparent;
+    transition: border 0.1s linear;
+    
+}
+.arrow-button:hover {
+    border: 1px solid rgba(21, 119, 184, 0.274);
+    background-color: rgba(21, 119, 184, 0.055); 
+}
+
+.description-box {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    background: linear-gradient(130deg, rgb(217, 232, 250),rgb(119, 189, 255));
+    
+}
+
+.description-box h3 a {
+    color:rgb(1, 75, 165);
 }

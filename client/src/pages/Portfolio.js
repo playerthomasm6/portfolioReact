@@ -51,8 +51,7 @@ function Portfolio(props) {
     }
   ]
 
-  const cycleProjectIndex = (e, value) => { // Controles index cycle for projectData
-    e.preventDefault();
+  const cycleProjectIndex = (value) => { // Controles index cycle for projectData
   if (value === "down" & projectIndex > 0) { //cycle index down for index greater than 0
     setprojectIndex(projectIndex - 1)
 
@@ -72,47 +71,21 @@ function Portfolio(props) {
     <div >
       <Header/>
 
-    <section className="container">
+      <section className="container-fluid">
 
-      <div className="row">
-
-      <div className="col-sm-1">
-      <img
-      className="arrow-button"
-      src={BackArrow}
-      onClick ={e => {cycleProjectIndex(e, "down")}}
-      />
-      </div>
-
-      <div className="col-sm-10">
-      <PortfolioWindow
+        <PortfolioWindow
         image = {projectData[projectIndex].image}
         imageAlt = {projectData[projectIndex].imageAlt}
         url = {projectData[projectIndex].url}
         title = {projectData[projectIndex].title}
         description = {projectData[projectIndex].description}
-      />
+        cycleProjectDown = {() => cycleProjectIndex("down")}
+        cycleProjectUp = {() => cycleProjectIndex("up")}
+        />
 
-      </div>
-
-      <div className="col-sm-1">
-      <img 
-      className="arrow-button"
-      src={ForwardArrow}
-      onClick ={e => {cycleProjectIndex(e, "up")}}
-      />
-      </div>
-    
-    
-
-      
-
-</div>
-
-    
-  </section>
-  <br/><br/><br/><br/>
-  <Footer/>
+      </section>
+  
+      <Footer/>
   </div>
     );
   }
