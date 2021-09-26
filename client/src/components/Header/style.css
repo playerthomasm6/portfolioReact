@@ -6,7 +6,7 @@
     
     background: repeating-linear-gradient(90deg, rgba(22, 22, 22, 0.705) 0%, rgba(0, 0, 0, 0.664) 1%),
                 repeating-linear-gradient(180deg, rgba(63, 63, 63, 0.568) 0%, rgba(0, 0, 0, 0.52) 1%),
-                repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.568) 0%, rgba(153, 231, 255, 0.548) 1%),
+                repeating-linear-gradient(130deg, rgba(255, 255, 255, 0.568) 0%, rgba(153, 231, 255, 0.548) 10%),
                 repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.568) 35%, rgba(0, 0, 0, 0.52) 40%);
     color: white;
     margin: 0;

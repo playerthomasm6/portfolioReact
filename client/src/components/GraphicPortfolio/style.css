@@ -1,15 +1,16 @@
 .scrolling-x {
     overflow-x: auto;
-    background-color: white;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right, white, rgba(0, 0, 0, 0.774))
 }
 
 .image-box {
     border: 2px solid rgba(0, 140, 255, 0.103);
     border-radius: 5%;
     margin: 1%;
-    padding: 5% 1% 5% 1%;
+    padding: 5% 0.5% 5% 0.5%;
     background-color: rgba(255, 255, 255, 0.52);
-    box-shadow: inset 0px 0px 15px 10px rgba(1, 19, 41, 0.219);
+    box-shadow: inset 0px 0px 10px 5px rgba(1, 19, 41, 0.219);
 
 }
     .description-box {
@@ -24,6 +25,7 @@
 .boundry {
     margin-left: 10%;
     padding: 0;
+    
     
     
     
