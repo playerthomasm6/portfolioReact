@@ -8,10 +8,7 @@
     border-radius: 5%;
     margin: 1%;
     padding: 5% 1% 5% 1%;
-    background: linear-gradient(130deg, rgba(255, 200, 148, 0.52) 45%, rgba(16, 139, 211, 0.568) 55%),
-                linear-gradient(90deg, rgba(16, 139, 211, 0.568) 45%, rgba(255, 255, 255, 0.52) 55%),
-                linear-gradient(180deg, rgba(195, 16, 211, 0.568) 45%, rgba(0, 255, 119, 0.87) 55%),
-                linear-gradient(270deg, rgba(49, 202, 113, 0.568) 45%, rgba(255, 0, 0, 0.52) 55%);
+    background-color: rgba(255, 255, 255, 0.52);
     box-shadow: inset 0px 0px 15px 10px rgba(1, 19, 41, 0.219);
 
 }
