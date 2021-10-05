@@ -33,7 +33,7 @@ body {
     
 }
 
-div::-webkit-scrollbar {
+div::-webkit-scrollbar { /*SCROLL BAR*/
     width: 12px;
 }
 
@@ -186,6 +186,11 @@ div::-webkit-scrollbar-thumb {
 .graphic-style {
     background-size: 100% 100%;
         background-image: linear-gradient(to right, rgb(211, 243, 253), rgba(0, 25, 49, 0.774))
+}
+
+.title-text {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
 }
 
 

@@ -7,6 +7,8 @@ p {
 .row-style {
     text-align: center;
     padding: 25px 0 25px 0;
+    display: flex;
+    max-width: 100vw;
 }
 
 .white-text{
@@ -15,9 +17,10 @@ p {
 
 
 .image-box-style { /*Container for portfolio image*/
-    justify-content: center;
-    text-align: center;
-    height: 15vh;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 0;
+    
 }
 
 @media (min-width: 544px) {
@@ -29,21 +32,23 @@ p {
 }
 
 .image-style { /*Portfolio image*/
-    width: 100%;
+    margin: auto;
+    width: 75%;
     height: 100%;
     object-fit: contain;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.123);
     
 }
 
+.image-style:hover {
+    border: 10px solid (rgb(255, 0, 0));
+}
+
 .arrow-button-box {
-    text-align: center;
-    padding-top: 10%;
+    margin: auto;
 }
 
 .arrow-button {
-    padding-right: auto;
-    padding-left: auto;
     margin: auto;
     border: 2px solid transparent;
     transition: border 0.1s linear;
@@ -55,11 +60,10 @@ p {
 }
 
 .description-box {
-    margin-top: 0;
     text-align: center;
     color: black;
     background: linear-gradient(130deg, rgb(217, 232, 250),rgb(119, 189, 255));
-    
+    width: 50vw;
 }
 
 .description-box h3 a {

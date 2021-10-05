@@ -73,6 +73,8 @@ function Portfolio(props) {
 
       <section className="container-fluid">
 
+        
+
         <PortfolioWindow
         image = {projectData[projectIndex].image}
         imageAlt = {projectData[projectIndex].imageAlt}

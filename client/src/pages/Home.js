@@ -26,14 +26,12 @@ function Home() {
                  <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-wrapper">
 
                   <section className="col-8 content-title-box">
-                <h1 className="content-title">Web Development</h1>
+                <h1 className="content-title">Hello my name is <br/>Thomas Player</h1>
+                
                 <p className="main-text">
-                  This Site is to demonstrate some of my knowledge and ablities with web developement
-                  BackgroundImgObcaecati impedit tenetur beatae! Neque repellendus dicta illo
-                  facere exercitationem voluptas totam nam quia, nemo dolore facilis 
-                  obcaecati tempora ipsa itaque nostrum placeat minima at. Ab, at atque. 
-                  Maxime nostrum cum debitis sint dolorum optio minus totam est eaque. 
-                  Voluptates, adipisci</p>
+                I am a full stack web developer specializing in the MERN stack.  I created this website to demonstrate some of the skills I haved learned.
+                </p>
+
                   </section>
 
                 <section className="col-8 content-title-box">

@@ -34,15 +34,15 @@ const chooseColor = (a) => {
 
     return (
             
-                <div className="col-sm-5 col-10 d-flex justify-content-center text-center boundry">
+                <div className="col-sm-5 col-10 d-flex boundry">
                     
                     
                     <div className="image-box">
                         <img src={props.imageSource} alt={props.imageAlt} className="img-thumbnail img-style" style={styles0}></img>
                         
                         
-                        <div className="description-box">
-                            <h4 className="title-card">{props.title}</h4>
+                        <div className="description-container">
+                            <h4 className="title-text">{props.title}</h4>
                             <p>{props.descriptionText}</p>
 
                         </div>

@@ -10,7 +10,9 @@ function PortfolioWindow(props) {
   return (
     <div>
       <article className="row row-style d-flex justify-content-center text-center">
-        <div className="col-sm-3 col-2 arrow-button-box">
+        
+        
+        <div className="col-sm-2 col-2 arrow-button-box">
           <img
             className="arrow-button"
             src={BackArrow}
@@ -18,12 +20,12 @@ function PortfolioWindow(props) {
           />
         </div>
 
-        <div className="col-sm-5 col-7 image-box-style">
+        <div className="col-sm-7 col-8 image-box-style">
           <a href={props.url}><img src={props.image} alt={props.imageAlt} className="image-style" /></a>
         </div>
 
 
-        <div className="col-sm-3 col-2 arrow-button-box">
+        <div className="col-sm-2 col-2 arrow-button-box">
           <img
             className="arrow-button"
             src={ForwardArrow}
@@ -35,8 +37,8 @@ function PortfolioWindow(props) {
       </article>
 
       <div className="row">
-        <div className="col-sm-9 description-box">
-          <h3><a href={props.url}>{props.title}</a></h3>
+        <div className="col-sm-4 col-10 description-box">
+          <h5><a href={props.url}>{props.title}</a></h5>
           <p> {props.description}
           </p>
         </div>

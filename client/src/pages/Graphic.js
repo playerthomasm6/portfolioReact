@@ -9,30 +9,54 @@ import CHF_Logo from "../Images/CHF_Logo.PNG";
 
 function Graphic() {
 
+  const graphicData = [ // Array which holds graphic design data to display
+    {
+      key: "A1",
+      title: "Court House Fitness",
+      imageSource: CHF_Logo,
+      imageAlt: "Court House Fitness Logo",
+      descriptionText: "This graphic was designed for t-shirts to be sold by Court House Fitness"
+    },
+    {
+      key: "A2",
+      title: "PlaceHolder",
+      imageSource: PlaceHolder150x150,
+      imageAlt: "Placeholder Image",
+      descriptionText: "This is placeholder text until I design more graphics professionally"
+    },
+    {
+      key: "A3",
+      title: "PlaceHolder",
+      imageSource: PlaceHolder150x150,
+      imageAlt: "Placeholder Image",
+      descriptionText: "This is placeholder text until I design more graphics professionally"
+    }
+  ];
+
   return (
   <div className="graphic-style">
    <Header/>
     <div className="container-fluid">
+      <div className="row">
+          <div className="col-12 title-text">
+            <h1>My Graphic Designs</h1>
+            <h5>I am new to graphic design however I love to learn new skills. I hope to have many more graphics to show off in the near future.</h5>
+          </div>
+      </div>
+      
+      
       <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-x">
-        <GraphicPortfolio
-        title="Court House Fitness"
-        imageSource={CHF_Logo}
-        imageAlt="Court House Fitness Logo"
-        descriptionText="This logo was designed for Court House Fitness for t-shirts."
         
+        {graphicData.map(item => ( // grabs data from graphicData and displays for each index in array
+          <GraphicPortfolio
+          key = {item.key}
+          title= {item.title}
+          imageSource= {item.imageSource}
+          imageAlt= {item.imageAlt}
+          descriptionText= {item.descriptionText}
         />
-        <GraphicPortfolio
-        title="Court House Fitness"
-        imageSource={CHF_Logo}
-        imageAlt="Court House Fitness Logo"
-        descriptionText="This logo was designed for Court House Fitness for t-shirts."
-        />
-        <GraphicPortfolio
-        title="Court House Fitness"
-        imageSource={CHF_Logo}
-        imageAlt="Court House Fitness Logo"
-        descriptionText="This logo was designed for Court House Fitness for t-shirts."
-        />
+        ))}
+        
         <div className="col-sm-3 col-3"></div>
       </div>
     </div>

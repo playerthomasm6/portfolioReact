@@ -7,25 +7,32 @@
     padding: 5% 0.5% 5% 0.5%;
     background-color: rgba(255, 255, 255, 0.52);
     box-shadow: inset 0px 0px 10px 5px rgba(1, 19, 41, 0.219);
+    text-align: center;
+    justify-content: center;
 
 }
-    .description-box {
+    .description-container {
         border: 1px solid rgba(0, 0, 0, 0.137);
-        border-radius: 10%;
-        margin: 5% 10% 5% 10%;
-        padding: 5% 5% 5% 5%;
+        border-radius: 3
+        %;
         background-color: rgba(238, 238, 238, 0.918);
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        margin: 5%;
+    }
+
+    .title-text {
+        padding: 2%;
     }
 
 
 .boundry {
+    display: flex;
     margin-left: 10%;
     padding: 0;
-    
-    
-    
-    
-
+    text-align: center;
+    justify-content: center;
 }
 
 .img-style {
