@@ -90,71 +90,24 @@ div::-webkit-scrollbar-thumb {
     height: 100%;
 }
 
-.content-title { /* Page Content Title H1 */
-    text-align: center;
-    text-decoration: underline;
-    font-weight: 900;
-    font-size: 2em;
-    padding: 1%;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
-
-}
-
-.main-text {
-    font-size: .75em;
-    text-shadow: 1px 1px 1px rgba(0, 18, 27, 0.383);
-}
 
 @media (min-width: 544px) {
     .r100 {
         height: 100%;
     }
-    .content-title { /* Page Content Title H1 */
-        text-align: center;
-        text-decoration: underline;
-        font-weight: 900;
-        font-size: 2em;
-        padding: 1%;
+    
     }
 
-    .main-text {
-        font-size: .75em;
-    }
-
-    }
-    
-    
-    
     @media (min-width: 768px) {
         .r100 {
             min-height: 100%;
         }
-        .content-title { /* Page Content Title H1 */
-            text-align: center;
-            text-decoration: underline;
-            font-weight: 900;
-            font-size: 1em;
-            padding: 1%;
-        }
-        .main-text {
-            font-size: .75em;
-        }
-
+        
         }
     
     @media (min-width: 992px) {
         .r100 {
             min-height: 100%;
-        }
-        .content-title { /* Page Content Title H1 */
-            text-align: center;
-            text-decoration: underline;
-            font-weight: 900;
-            font-size: 2em;
-            padding: 1%;
-        }
-        .main-text {
-            font-size: 1.2em;
         }
             
         }
@@ -162,17 +115,6 @@ div::-webkit-scrollbar-thumb {
     @media (min-width: 1200px) {
         .r100 {
             height:100%;
-        }
-
-        .content-title { /* Page Content Title H1 */
-            text-align: center;
-            text-decoration: underline;
-            font-weight: 900;
-            font-size: 2.4em;
-            padding: 1%;
-        }
-        .main-text {
-            font-size: 1.4em;
         }
     }
 
