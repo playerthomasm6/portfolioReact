@@ -14,6 +14,7 @@ import NoteTaker from "../Images/noteTaker.JPG"
 import Tipster from "../Images/tipster.JPG"
 import BackArrow from "../Images/icons8-back-to-64.png"
 import ForwardArrow from "../Images/icons8-next-page-64.png"
+import Flashgrid from "../Images/flashgrid_thumbnail.PNG"
 
 
 function Portfolio(props) {
@@ -21,6 +22,13 @@ function Portfolio(props) {
   const [projectIndex, setprojectIndex] = useState(0) // State for used to set projectData Array current index
 
   const projectData = [ // Data Array which includes all project data... images, descriptions, titles etc.
+    {
+      image: Flashgrid,
+      imageAlt: "Flashgrid Thumbnail",
+      url: "https://fathomless-crag-63072.herokuapp.com/",
+      title: "Flashgrid",
+      description: "Flashgrid is a project project management application.  Create tasks and organize you life.  Flashgrid was my final project for Rutgers coding bootcamp"
+    },
     {
       image: EatDaBurger,
       imageAlt: "Screenshot",
@@ -35,13 +43,13 @@ function Portfolio(props) {
       title: "Radical Gamez",
       description: "Radical Games is a web app which allows a user to search games and add them to a wish list."
     },
-    {
-      image: NoteTaker,
-      imageAlt: "Screenshot",
-      url: "https://limitless-reaches-25124.herokuapp.com/notes",
-      title: "Note Taker App",
-      description: "This app allows a user to create notes and save them to view or edit later."
-    },
+    // {
+    //   image: NoteTaker,
+    //   imageAlt: "Screenshot",
+    //   url: "https://limitless-reaches-25124.herokuapp.com/notes",
+    //   title: "Note Taker App",
+    //   description: "This app allows a user to create notes and save them to view or edit later."
+    // },
     {
       image: Tipster,
       imageAlt: "Screenshot",

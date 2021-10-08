@@ -13,8 +13,7 @@
 }
     .description-container {
         border: 1px solid rgba(0, 0, 0, 0.137);
-        border-radius: 3
-        %;
+        border-radius: 3%;
         background-color: rgba(238, 238, 238, 0.918);
         text-align: center;
         justify-content: center;

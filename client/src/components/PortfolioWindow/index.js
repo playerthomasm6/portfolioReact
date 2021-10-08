@@ -36,8 +36,8 @@ function PortfolioWindow(props) {
 
       </article>
 
-      <div className="row">
-        <div className="col-sm-4 col-10 description-box">
+      <div className="row description-box-row">
+        <div className="col-sm-5 col-10 description-box">
           <h5><a href={props.url}>{props.title}</a></h5>
           <p> {props.description}
           </p>

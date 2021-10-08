@@ -36,12 +36,12 @@ p {
     width: 75%;
     height: 100%;
     object-fit: contain;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.123);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.459);
     
 }
 
 .image-style:hover {
-    border: 10px solid (rgb(255, 0, 0));
+    box-shadow: 2px 2px 5px 1px rgb(0, 0, 0);
 }
 
 .arrow-button-box {
@@ -59,7 +59,14 @@ p {
     background-color: rgba(21, 119, 184, 0.055); 
 }
 
+.description-box-row {
+    text-align: center;
+    display: grid;
+}
+
 .description-box {
+    margin: 0px auto 2% auto;
+    border-radius: 5%;
     text-align: center;
     color: black;
     background: linear-gradient(130deg, rgb(217, 232, 250),rgb(119, 189, 255));
