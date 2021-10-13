@@ -20,7 +20,7 @@ body {
 }
 
 .main-info {
-    background: linear-gradient(90deg, rgb(10, 8, 24) 0%, rgb(55, 99, 139) 25%,rgb(95, 162, 190) 50%,rgb(207, 221, 226) 75%);
+    background: linear-gradient(90deg, rgb(172, 193, 199) 0%, rgb(128, 151, 173) 25%,rgb(152, 198, 219) 50%,rgb(207, 221, 226) 75%);
     min-height: 100%;
     box-shadow: inset 0px 0px 30px rgba(7, 89, 136, 0.616);
 }
