@@ -12,18 +12,22 @@ function Footer(props) {
     <div className="container-fluid footer">
         <div className="row">
             
-            <div className="col-sm-4 center">
-                <p>Contact</p>
-                <p>Site by Thomas M. Player</p>
+            <div className="col-sm-4 col-12 center">
+                <a href="/"><p>Home</p></a>
+                <a href="/about"><p>About</p></a>
+                <a href="/portfolio"><p>Web Development</p></a>
+                <a href="/graphic-design"><p>Graphic Design</p></a>
             </div>
             
-            <div className="col-sm-4 center">
-                <img src={GitHubIcon}></img>
-                <img src={LinkedinIcon}></img>
-                <img src={TwitterIcon}></img>
+            <div className="col-sm-4 col-12 center">
+                
+                <a href="https://github.com/playerthomasm6"><img className="socialIcons" src={GitHubIcon}></img></a>
+                <a href="https://linkedin.com/in/thomas-player-18926213b/"><img className="socialIcons" src={LinkedinIcon}></img></a>
             </div>
             
-            <div className="col-sm-4 center">
+            <div className="col-sm-4 col-12 
+            
+            center">
                 <p>Site by Thomas M. Player</p>
                 <p>Contact</p>
                 <p>Site by Thomas M. Player</p>
