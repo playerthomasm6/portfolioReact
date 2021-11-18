@@ -50,7 +50,7 @@ const Canvas = props => {
 
         circleWidth = (Math.floor(Math.random() * (window.innerWidth - 200) + 200));
         circleHeight = (Math.floor(Math.random() * (window.innerHeight - 200) + 200));
-        circleSize = Math.floor(Math.random() * 5);
+        circleSize = 3;
         circleSpeedX = (Math.floor(Math.random() * 6)) - 5;
         circleSpeedY = (Math.floor(Math.random() * 5)) - 5;
         counter = circleSize;
