@@ -15,6 +15,7 @@ import Tipster from "../Images/tipster.JPG"
 import BackArrow from "../Images/icons8-back-to-64.png"
 import ForwardArrow from "../Images/icons8-next-page-64.png"
 import Flashgrid from "../Images/flashgrid_thumbnail.PNG"
+import Canvas from"../components/Canvas";
 
 
 function Portfolio(props) {
@@ -94,7 +95,7 @@ function Portfolio(props) {
         />
 
       </section>
-  
+      <Canvas/>
       <Footer/>
   </div>
     );

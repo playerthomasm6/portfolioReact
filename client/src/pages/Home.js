@@ -4,9 +4,11 @@ import LogoBl from "../Images/Bl-logo.png";
 import Footer from"../components/Footer";
 import Header from"../components/Header";
 import TextBubble from"../components/TextBubble";
+
 import "./style.css";
 import BackgroundImg from "../Images/Bg-02.jpg";
 import KeyboardImg from "../Images/keyboard-blue-splash.png";
+
 
 function Home() {
 

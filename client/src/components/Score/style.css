@@ -1,0 +1,21 @@
+.footer {
+    background-color: black;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.center {
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    justify-content: center;
+}
+
+.socialIcons {
+    padding: 1% .5% 0 .5%;
+}
+
+a p {
+    color: white;
+    
+}
