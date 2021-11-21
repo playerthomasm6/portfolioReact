@@ -1,0 +1,14 @@
+#canvasID {
+    background-color: white;
+    margin: auto;
+}
+
+
+#canvas-container {
+    display: grid;
+    background-color: black;
+}
+
+#score {
+    color: white;
+}
