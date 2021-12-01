@@ -96,7 +96,7 @@ function Portfolio(props) {
         />
 
       </section>
-      <CanvasGravity/>
+      {/* <CanvasGravity/> */}
       <Footer/>
   </div>
     );

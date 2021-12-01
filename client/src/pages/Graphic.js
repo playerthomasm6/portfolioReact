@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import GraphicPortfolio from "../components/GraphicPortfolio";
 import PlaceHolder150x150 from "../Images/150x150.png";
 import CHF_Logo from "../Images/CHF_Logo.PNG";
+import NJS_Logo from "../Images/NJsoldiers_logo.png";
 
 function Graphic() {
 
@@ -19,13 +20,13 @@ function Graphic() {
     },
     {
       key: "A2",
-      title: "PlaceHolder",
-      imageSource: PlaceHolder150x150,
-      imageAlt: "Placeholder Image",
-      descriptionText: "This is placeholder text until I design more graphics professionally"
+      title: "New Jersey Soldiers",
+      imageSource: NJS_Logo,
+      imageAlt: "New Jersey Soldiers logo",
+      descriptionText: "This graphic was a reskin and recolor of a previous logo design.  The image was created for the purpose of social media posts and emailing."
     },
     {
-      key: "A3",
+      key: "A2",
       title: "PlaceHolder",
       imageSource: PlaceHolder150x150,
       imageAlt: "Placeholder Image",
