@@ -33,6 +33,8 @@ function Home() {
       }
     ]
 
+    
+
     return (
       <div className="container-fluid full-view bg-dark">
         <Header/>

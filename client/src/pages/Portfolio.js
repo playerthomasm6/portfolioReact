@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState, useEffect, useContext, useRef} from "react";
 import DefaultImage from "../Images/150x150.png"
 
 import Nav from "../components/Nav";
@@ -20,6 +20,8 @@ import CanvasGravity from"../components/CanvasGravity";
 
 
 function Portfolio(props) {
+
+
 
   const [projectIndex, setprojectIndex] = useState(0) // State for used to set projectData Array current index
 
@@ -77,6 +79,41 @@ function Portfolio(props) {
   }
 }
  
+
+let touchstartX = 0
+let touchendX = 0
+
+const slider = useRef(null)
+
+function handleGesture() {
+  if (touchendX < touchstartX + 200) {
+    console.log('swiped left!')
+    if (projectIndex < projectData.length - 1)
+    setprojectIndex(projectIndex + 1)
+    touchstartX = 0
+    touchendX = 0
+  }
+  if (touchendX > touchstartX - 200) {
+    console.log(touchendX + " " + touchstartX)
+    console.log(touchendX - touchstartX)
+    if (projectIndex > 0)
+    setprojectIndex(projectIndex - 1)
+    if (projectIndex === 0) {
+      setprojectIndex(projectData.length - 1)
+    }
+    touchstartX = 0
+    touchendX = 0
+  }
+}
+
+window.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+window.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  handleGesture()
+})
   return (
     <div >
       <Header/>
@@ -84,7 +121,7 @@ function Portfolio(props) {
       <section className="container-fluid">
 
         
-
+      <div ref={slider}>
         <PortfolioWindow
         image = {projectData[projectIndex].image}
         imageAlt = {projectData[projectIndex].imageAlt}
@@ -94,7 +131,7 @@ function Portfolio(props) {
         cycleProjectDown = {() => cycleProjectIndex("down")}
         cycleProjectUp = {() => cycleProjectIndex("up")}
         />
-
+        </div>
       </section>
       {/* <CanvasGravity/> */}
       <Footer/>
