@@ -93,7 +93,7 @@ function handleGesture() {
     touchstartX = 0
     touchendX = 0
   }
-  if (touchendX > touchstartX - 200) {
+  if (touchendX > touchstartX) {
     console.log(touchendX + " " + touchstartX)
     console.log(touchendX - touchstartX)
     if (projectIndex > 0)
