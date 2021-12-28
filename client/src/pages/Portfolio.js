@@ -18,6 +18,9 @@ import Flashgrid from "../Images/flashgrid_thumbnail.PNG"
 import Canvas from"../components/Canvas";
 import CanvasGravity from"../components/CanvasGravity";
 
+// React Bootstrap Items
+import {ProgressBar} from 'react-bootstrap';
+
 
 function Portfolio(props) {
 
@@ -80,40 +83,41 @@ function Portfolio(props) {
 }
  
 
-let touchstartX = 0
-let touchendX = 0
+// let touchstartX = 0
+// let touchendX = 0
 
-const slider = useRef(null)
+// const slider = useRef(null)
 
-function handleGesture() {
-  if (touchendX < touchstartX + 200) {
-    console.log('swiped left!')
-    if (projectIndex < projectData.length - 1)
-    setprojectIndex(projectIndex + 1)
-    touchstartX = 0
-    touchendX = 0
-  }
-  if (touchendX > touchstartX) {
-    console.log(touchendX + " " + touchstartX)
-    console.log(touchendX - touchstartX)
-    if (projectIndex > 0)
-    setprojectIndex(projectIndex - 1)
-    if (projectIndex === 0) {
-      setprojectIndex(projectData.length - 1)
-    }
-    touchstartX = 0
-    touchendX = 0
-  }
-}
+// function handleGesture() {
+//   if (touchendX < touchstartX + 200) {
+//     console.log('swiped left!')
+//     if (projectIndex < projectData.length - 1)
+//     setprojectIndex(projectIndex + 1)
+//     touchstartX = 0
+//     touchendX = 0
+//   }
+//   if (touchendX > touchstartX) {
+//     console.log(touchendX + " " + touchstartX)
+//     console.log(touchendX - touchstartX)
+//     if (projectIndex > 0)
+//     setprojectIndex(projectIndex - 1)
+//     if (projectIndex === 0) {
+//       setprojectIndex(projectData.length - 1)
+//     }
+//     touchstartX = 0
+//     touchendX = 0
+//   }
+// }
 
-window.addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX
-})
+// window.addEventListener('touchstart', e => {
+//   touchstartX = e.changedTouches[0].screenX
+// })
 
-window.addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX
-  handleGesture()
-})
+// window.addEventListener('touchend', e => {
+//   touchendX = e.changedTouches[0].screenX
+//   handleGesture()
+// })
+
   return (
     <div >
       <Header/>
@@ -121,7 +125,7 @@ window.addEventListener('touchend', e => {
       <section className="container-fluid">
 
         
-      <div ref={slider}>
+      <div>
         <PortfolioWindow
         image = {projectData[projectIndex].image}
         imageAlt = {projectData[projectIndex].imageAlt}
@@ -134,6 +138,38 @@ window.addEventListener('touchend', e => {
         </div>
       </section>
       {/* <CanvasGravity/> */}
+
+      {/* <section className="row d-flex justify-content-center" id="skills-row">
+        <div className="col-sm-3 col-12 skills skill-items">
+            <h1 className="">Skills/Experience</h1>
+        </div>
+        <div className="col-sm-7 col-12 skills">
+          <div className="row">
+            <div className="col-3">
+            <ul className="">
+              <li>React.js</li>
+              
+              <li>HTML5 Canvas</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            </div>
+            <div className="col-9">
+              <ul>
+              <li className="progress-bar-list"><ProgressBar now={70} label={`${70}%`}/></li>
+              
+              <li className="progress-bar-list"><ProgressBar now={50} label={`${50}%`}/></li>
+              <li className="progress-bar-list"><ProgressBar now={70} label={`${70}%`}/></li>
+              <li className="progress-bar-list"><ProgressBar now={70} label={`${70}%`}/></li>
+              <li className="progress-bar-list"><ProgressBar now={70} label={`${70}%`}/></li>
+              </ul>
+            
+            </div>
+          </div>
+            
+        </div>
+      </section> */}
       <Footer/>
   </div>
     );

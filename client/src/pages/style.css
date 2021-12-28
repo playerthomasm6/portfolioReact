@@ -52,6 +52,31 @@ div::-webkit-scrollbar-thumb {
 
 /*HOME PAGE */
 
+/*Web Developement PAGE*/
+    #skills-row {
+        
+        
+    }
+
+    .skills {
+        margin:1%;
+        padding: 2%;
+        border-radius: 3%;
+        box-shadow: 0px 0px 5px rgb(155, 155, 155), inset 0px 0px 2px rgb(172, 172, 172);
+    }
+
+    .skill-items {
+        display: grid;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .progress-bar-list{
+        list-style-type: none;
+    }
+/*Web Developement PAGE */
+
+
 .colorChanger:hover {
     cursor: pointer;
     
@@ -133,6 +158,37 @@ div::-webkit-scrollbar-thumb {
 .title-text {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
+}
+
+/*ABOUT PAGE*/
+
+.bg-flow {
+    animation: bg-flow 120s infinite alternate;
+}
+
+@keyframes bg-flow {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+.font-georgia {
+    font-family: Georgia, serif;
+    color: white;
+}
+
+.section-bg {
+    background: rgba(0, 0, 0, 0.924);
+    padding: 1%;
+}
+
+.hover-red:hover {
+    color: rgb(141, 0, 0);
+    text-decoration: underline;
 }
 
 
