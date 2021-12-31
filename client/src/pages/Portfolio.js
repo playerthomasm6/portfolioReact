@@ -34,7 +34,7 @@ function Portfolio(props) {
       imageAlt: "Flashgrid Thumbnail",
       url: "https://fathomless-crag-63072.herokuapp.com/",
       title: "Flashgrid",
-      description: "Flashgrid is a project project management application.  Create tasks and organize you life.  Flashgrid was my final project for Rutgers coding bootcamp"
+      description: "Flashgrid is a project management web app.  Create tasks and organize you life.  Flashgrid was my final project for Rutgers coding bootcamp"
     },
     {
       image: EatDaBurger,
@@ -43,13 +43,13 @@ function Portfolio(props) {
       title: "Eat-Da-Burger",
       description: "Eat the burger is a simple app to allow a user to create burger names.  The “burgers” can then be eaten and added to a new list."
     },
-    {
-      image: RadicalGames,
-      imageAlt: "Screenshot",
-      url: "https://raticles.herokuapp.com/index.html",
-      title: "Radical Gamez",
-      description: "Radical Games is a web app which allows a user to search games and add them to a wish list."
-    },
+    // {
+    //   image: RadicalGames,
+    //   imageAlt: "Screenshot",
+    //   url: "https://raticles.herokuapp.com/index.html",
+    //   title: "Radical Gamez",
+    //   description: "Radical Games is a web app which allows a user to search games and add them to a wish list."
+    // },
     // {
     //   image: NoteTaker,
     //   imageAlt: "Screenshot",
@@ -57,13 +57,13 @@ function Portfolio(props) {
     //   title: "Note Taker App",
     //   description: "This app allows a user to create notes and save them to view or edit later."
     // },
-    {
-      image: Tipster,
-      imageAlt: "Screenshot",
-      url: "https://playerthomasm6.github.io/tipster/",
-      title: "Tipster",
-      description: "This app allows the user to search any movie or television show and using an algorithm pairs a beer with the movie."
-    }
+    // {
+    //   image: Tipster,
+    //   imageAlt: "Screenshot",
+    //   url: "https://playerthomasm6.github.io/tipster/",
+    //   title: "Tipster",
+    //   description: "This app allows the user to search any movie or television show and using an algorithm pairs a beer with the movie."
+    // }
   ]
 
   const cycleProjectIndex = (value) => { // Controles index cycle for projectData

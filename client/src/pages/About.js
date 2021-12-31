@@ -84,7 +84,7 @@ function About(props) {
           <article className="col-sm-6 margin-height-auto rounded">
             <h3 className="margin-textbox top-margin font-georgia ">Get to know me more...</h3>
             <p className="margin-textbox margin-bottom-textbox font-georgia ">
-              My family includes my wife Megan, son Thomas and two dogs Cooper and Remi.  We live in southern New Jersey.  When I am not working I like to play video games and play my guitars.
+              My family includes my wife Megan, son Thomas and two dogs Cooper and Remi.  We live in southern New Jersey.  When I am not working I like to play video games and play my guitars.  
 
             </p>
           </article>

@@ -17,13 +17,13 @@ function Home() {
         link: "/about",
         key: "B1",
         titleText: "Hello my name is Thomas Player",
-        bodyText: "I am a full stack web developer specializing in the MERN stack.  I created this website to demonstrate some of the skills I haved learned. ===>"
+        bodyText: `I am a full stack web developer specializing in the MERN stack.  I created this website to demonstrate some of the skills I haved learned. ===>`
       },
       {
         link: "/portfolio",
         key: "B2",
         titleText: "Web Development",
-        bodyText: "I can code websites better than I can write sentences describing it.  So far my professional experience is limited, however I have made a few projects that demonstrate some of the skills I have learned that I would love for you to check out.  This site is created using React.JS  ===>"
+        bodyText: "  This site is created using React.JS  ===>"
       },
       {
         link: "/graphic-design",
@@ -41,17 +41,21 @@ function Home() {
           <div className="container-fluid row-height">
             <div className="row r100">
               
-              <div className='col-sm-2 col-12 d-none d-sm-block main-image-container'>
+              <div className='col-md-2 col-12 d-none d-md-block main-image-container'>
                 <img className="img-size" src={KeyboardImg}></img>
               </div>
 
-              <div className='col-sm-10 col-12 main-info'>
+
+              {/* Main Info Section */}
+              <div className='col-md-10 col-12 main-info'>
                 
                  <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-wrapper">
-                      
-                    
                       { //Grabs data from welcomeData to display TextBubble component
-                      welcomeData.map(section => (<TextBubble key = {section.key} titleText = {section.titleText} bodyText = {section.bodyText} link = {section.link}/>))
+                      welcomeData.map(section => (<TextBubble 
+                        key = {section.key} 
+                        titleText = {section.titleText} 
+                        bodyText = {section.bodyText} 
+                        link = {section.link}/>))
                       }
                     
                 </div>
@@ -60,6 +64,18 @@ function Home() {
 
             </div>
           </div>
+
+          <section className="row text-box">
+            <div className="col">
+            <h1>More Content</h1>
+
+
+
+
+
+            </div>
+            
+          </section>
         
         <Footer/>
       </div>

@@ -9,7 +9,7 @@ import NoMatch from "./pages/NoMatch";
 function App() {
   return (
     <Router>
-      <div className="bg-light">
+      
         <Switch>
           <Route exact path="/">
             <Home />
@@ -27,7 +27,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
-      </div>
+      
     </Router>
   );
 }

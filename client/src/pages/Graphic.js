@@ -48,8 +48,7 @@ function Graphic() {
     <div className="container-fluid">
       <div className="row">
           <div className="col-12 title-text">
-            <h1>My Graphic Designs</h1>
-            <h5>I am new to graphic design however I love to learn new skills. I hope to have many more graphics to show off in the near future.</h5>
+            <h1>Some of my graphic logo work</h1>
           </div>
       </div>
       

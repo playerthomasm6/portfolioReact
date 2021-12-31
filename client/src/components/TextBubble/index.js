@@ -9,7 +9,6 @@ function TextBubble(props) {
     <p className="main-text main-text-font">
     {props.bodyText}
     </p>
-
       </section>
   );
 }
