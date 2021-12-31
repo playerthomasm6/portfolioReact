@@ -47,11 +47,12 @@ a:hover {
     
     @media (min-width: 768px) {
         .content-title { /* Page Content Title H1 */
-            font-size: 2em;
+            font-size: 1.5em;
             padding: 1%;
         }
         .main-text {
-            font-size: 1.5em;
+            font-size: 1em;
+            padding: 0%;
         }
 
         }

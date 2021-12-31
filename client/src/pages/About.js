@@ -38,7 +38,7 @@ function About(props) {
                 I am a full stack web developer specializing in React.js front end development.  I have recently completed a six month long full stack web development coding bootcamp at Rutgers University.
                 <br /><br />
 
-                I am driven to learn all that I can about web development and to be a well rounded developer.  Right now some of my skills include:
+                Some of my skills include:
 
               </p>
 
@@ -48,10 +48,19 @@ function About(props) {
               <ul className="col-sm-4 font-georgia ">
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaScript</li>
+                <li>JavaScript/ES6</li>
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>JQUERY</li>
+              </ul>
+
+              <ul className="col-sm-4 font-georgia ">
+                <li>SQL/NoSQL</li>
+                <li>Bootstrap/Materialize</li>
+                <li>Mobile Friendly Design</li>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Photo Editing</li>
               </ul>
             </div>
 
@@ -62,8 +71,9 @@ function About(props) {
             <div className="row">
               <h3 className="margin-textbox top-margin font-georgia ">More about me...</h3>
               <p className="margin-textbox font-georgia ">
+                I completed the Rutgers University Full Stack Web Developer Coding Bootcamp in March of 2021.  
                 I have learned to use tools such as GIMP, Inkscape nad Lunacy for the creation and design of graphics, photo editing and web design.
-                <a href="/graphics" className="font hover-red">   Click here to check out some of the graphics I have worked on already.</a>
+                <a href="/graphics" className="font hover-red" style={{color: "white"}}>   Click here to check out some of the graphics I have worked on already.</a>
               </p>
             </div>
           </article>
@@ -82,9 +92,9 @@ function About(props) {
           </picture>
 
           <article className="col-sm-6 margin-height-auto rounded">
-            <h3 className="margin-textbox top-margin font-georgia ">Get to know me more...</h3>
+            <h3 className="margin-textbox top-margin font-georgia ">My Family</h3>
             <p className="margin-textbox margin-bottom-textbox font-georgia ">
-              My family includes my wife Megan, son Thomas and two dogs Cooper and Remi.  We live in southern New Jersey.  When I am not working I like to play video games and play my guitars.  
+              My family includes my wife Megan, son Thomas and two dogs Cooper and Remi.  We live in southern New Jersey. 
 
             </p>
           </article>
