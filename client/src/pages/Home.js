@@ -4,6 +4,7 @@ import LogoBl from "../Images/Bl-logo.png";
 import Footer from"../components/Footer";
 import Header from"../components/Header";
 import TextBubble from"../components/TextBubble";
+import DigitalClock from"../components/DigitalClock";
 
 import "./style.css";
 import BackgroundImg from "../Images/Bg-02.jpg";
@@ -33,7 +34,8 @@ function Home() {
       }
     ]
 
-    
+
+
 
     return (
       <div className="container-fluid full-view bg-dark">
@@ -65,14 +67,10 @@ function Home() {
             </div>
           </div>
 
-          <section className="row text-box">
-            <div className="col">
-            <h1>More Content</h1>
-
-
-
-
-
+          <section className="row text-box justify-content-center section-padding">
+            <div className="col-8 col-md-4 col-lg-3 ">
+            <h5>This section will contain a few widgets I have created for now this is recreation of a digital clock.</h5>
+                  <DigitalClock/>
             </div>
             
           </section>

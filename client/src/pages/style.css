@@ -64,6 +64,10 @@ div::-webkit-scrollbar-thumb {
     
 }
 
+.section-padding {
+    padding: 2%;
+}
+
 /*HOME PAGE */
 
 /*Web Developement PAGE*/
@@ -131,6 +135,8 @@ div::-webkit-scrollbar-thumb {
     .r100 {
         height: 100%;
     }
+
+  
     
     }
 
@@ -138,6 +144,8 @@ div::-webkit-scrollbar-thumb {
         .r100 {
             min-height: 100%;
         }
+
+    
         
         }
     
@@ -146,12 +154,15 @@ div::-webkit-scrollbar-thumb {
             min-height: 100%;
         }
             
+        
         }
     
     @media (min-width: 1200px) {
         .r100 {
             height:100%;
         }
+
+      
     }
 
 
@@ -193,7 +204,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 .section-bg {
-    background: rgba(0, 0, 0, 0.924);
+    background: rgba(0, 0, 0, 0.897);
     padding: 1%;
 }
 

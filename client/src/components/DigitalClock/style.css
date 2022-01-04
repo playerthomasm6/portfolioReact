@@ -1,0 +1,44 @@
+/* @font-face {
+    font-family: "DS-Digital";
+    src: url("/ds_digital/DS-GIGI.TTF");
+    src: url("/ds_digital/DS-GIGI.TTF") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.clock-case {
+    border: solid rgb(44, 44, 44);
+    align-content: center;
+    text-align: center;
+    background: radial-gradient(rgb(95, 95, 95), black);
+    border-radius: 10px;
+    padding: 3%;
+    margin: 5%;
+}
+
+
+.hourButton {
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 1% 10% 1% 10%;
+    margin: 5%;
+    background: radial-gradient(rgb(95, 95, 95), rgb(51, 51, 51));
+    border: transparent 1px;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+.hourButton:hover {
+    border: solid 1px rgba(255, 255, 255, 0.219);
+}
+
+.hourButton:focus {
+    border: solid 1px rgba(255, 255, 255, 0.219);
+}
+
+.displayTime {
+    background-color: black;
+    color: red;
+    padding: 2% 5% 2% 5%;
+    margin: 5% 15% 5% 15%;
+}

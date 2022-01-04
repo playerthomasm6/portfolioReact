@@ -35,17 +35,17 @@ function About(props) {
             <div className="row">
               <h3 className="margin-textbox top-margin font-georgia ">Hello! My name is Thomas Player</h3>
               <p className="margin-textbox font" id="font-georgia ">
-                I am a full stack web developer specializing in React.js front end development.  I have recently completed a six month long full stack web development coding bootcamp at Rutgers University.
+                I am a full stack web developer specializing in React.js front end development.  I have completed a six month full stack web development coding bootcamp at Rutgers University in March 2021.
                 <br /><br />
 
-                Some of my skills include:
+                Some of the skills and technologies I have learned include:
 
               </p>
 
             </div>
 
-            <div className="row margin-textbox margin-bottom-textbox">
-              <ul className="col-sm-4 font-georgia ">
+            <div className="row margin-textbox margin-bottom-textbox justify-content-center">
+              <ul className="col-sm-6 col-6 font-georgia ">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript/ES6</li>
@@ -54,10 +54,10 @@ function About(props) {
                 <li>JQUERY</li>
               </ul>
 
-              <ul className="col-sm-4 font-georgia ">
-                <li>SQL/NoSQL</li>
+              <ul className="col-sm-6 col-6 font-georgia ">
+                <li>HTML Canvas</li>
                 <li>Bootstrap/Materialize</li>
-                <li>Mobile Friendly Design</li>
+                <li>Mobile Design</li>
                 <li>Web Design</li>
                 <li>Graphic Design</li>
                 <li>Photo Editing</li>
@@ -71,8 +71,7 @@ function About(props) {
             <div className="row">
               <h3 className="margin-textbox top-margin font-georgia ">More about me...</h3>
               <p className="margin-textbox font-georgia ">
-                I completed the Rutgers University Full Stack Web Developer Coding Bootcamp in March of 2021.  
-                I have learned to use tools such as GIMP, Inkscape nad Lunacy for the creation and design of graphics, photo editing and web design.
+                In addition to web development I am a self taught graphic designer.  I have learned to use tools such as GIMP, Inkscape nad Lunacy for the creation and design of graphics, photo editing and web design.
                 <a href="/graphics" className="font hover-red" style={{color: "white"}}>   Click here to check out some of the graphics I have worked on already.</a>
               </p>
             </div>
