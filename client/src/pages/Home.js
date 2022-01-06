@@ -76,7 +76,7 @@ function Home() {
 
 
       </section>
-          <WeatherPortal />
+          {/* <WeatherPortal /> */}
         
 
 
