@@ -34,7 +34,7 @@ function About(props) {
           <article className="col-sm-6 margin-height-auto rounded">
             <div className="row">
               <h3 className="margin-textbox top-margin font-georgia ">Hello! My name is Thomas Player</h3>
-              <p className="margin-textbox font" id="font-georgia ">
+              <p className="margin-textbox font font-georgia">
                 I am a full stack web developer specializing in React.js front end development.  I have completed a six month full stack web development coding bootcamp at Rutgers University in March 2021.
                 <br /><br />
 
