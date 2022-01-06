@@ -31,6 +31,7 @@ function DigitalClock(props) {
     }, [twentyFour])
 
     const getCurrentTime = () => {
+        console.log("getCurrentTime Ran")
         let timerDelay = 3000; // sets the iteration time in miliseconds
         // console.log(twentyFour)
         const t = new Date();
@@ -38,15 +39,19 @@ function DigitalClock(props) {
         const minutesRaw = t.getMinutes();
         let minutes;
         let hours;
+        let pm;
 
-        if (parseInt(minutesRaw) < 10) {
-            minutes = `0${minutesRaw}`
-        } 
+        // These statements find if the minutes are single digits and adds 0 to them.
+        if (parseInt(minutesRaw) < 10) {minutes = `0${minutesRaw}`} 
         else minutes = minutesRaw;
 
-        if (!twentyFour && hoursRaw > 12) {
-            hours = hoursRaw - 12
-        } else hours = hoursRaw
+
+        if (!twentyFour && hoursRaw > 12) {hours = hoursRaw - 12}
+        else if (!twentyFour && hoursRaw === 0) {hours = 12}
+        else if (twentyFour && hoursRaw < 10) { hours = `0${hoursRaw}`} 
+        else if (twentyFour && hoursRaw === 0 || twentyFour && hoursRaw === 24){hours = `00`} 
+        else {hours = hoursRaw}
+            
 
         
 
@@ -61,7 +66,7 @@ function DigitalClock(props) {
 
     const handleTwentyFourClick = (e, trueFalse, callback) => {
         e.preventDefault()
-
+        console.log("clicked")
         setTwentyFour(trueFalse)
         callback()
     }
