@@ -10,6 +10,8 @@ import WeatherPortal from "../components/WeatherPortal";
 import "./style.css";
 import BackgroundImg from "../Images/Bg-02.jpg";
 import KeyboardImg from "../Images/keyboard-blue-splash.png";
+import KeyboardTransparent from "../Images/blueKeyboardTransparent.PNG";
+import Logo03 from "../Images/Logo-03.png";
 
 
 function Home() {
@@ -42,17 +44,17 @@ function Home() {
     <div className="container-fluid full-view bg-dark">
       <Header />
       <div className="container-fluid row-height">
-        <div className="row r100">
-
-          <div className='col-md-2 col-12 d-none d-md-block main-image-container'>
-            <img className="img-size" src={KeyboardImg}></img>
-          </div>
-
+        
 
           {/* Main Info Section */}
-          <div className='col-md-10 col-12 main-info'>
+          
 
-            <div className="row flex-row flex-nowrap scrolling-wrapper scroll-row">
+            <div className="row flex-row flex-nowrap scrolling-wrapper scroll-row main-info">
+              <div className='col-md-2 col-12  main-image-container'>
+                <img className="img-size" src={KeyboardImg}></img>
+              </div>
+
+
               { //Grabs data from welcomeData to display TextBubble component
                 welcomeData.map(section => (<TextBubble
                   key={section.key}
@@ -61,23 +63,29 @@ function Home() {
                   link={section.link} />))
               }
 
+              <div className='col-md-2 col-12 main-image-container'>
+                <img className="img-size" src={Logo03}></img>
+              </div>
+
             </div>
 
           </div>
-
-        </div>
-      </div>
+      
 
       <section className="row text-box justify-content-center section-padding">
-        <h5>This section will contain a few widgets I have created for now this is recreation of a digital clock.</h5>
-        <div className="col-8 col-md-4 col-lg-3 ">
+        <div className="col-lg-4 col-12">
+          <h4>Here are couple widgets I have made</h4>
+        </div>
+        
+        <div className="col-8 col-md-5 col-lg-3 ">
+          <h6>Digital Clock</h6>
           <DigitalClock />
         </div>
 
 
       </section>
-          {/* <WeatherPortal /> */}
-        
+      {/* <WeatherPortal /> */}
+
 
 
       <Footer />
