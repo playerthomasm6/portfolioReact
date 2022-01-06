@@ -52,7 +52,7 @@ function Home() {
           {/* Main Info Section */}
           <div className='col-md-10 col-12 main-info'>
 
-            <div className="row flex-row flex-nowrap mt-4 pb-4 scrolling-wrapper">
+            <div className="row flex-row flex-nowrap scrolling-wrapper scroll-row">
               { //Grabs data from welcomeData to display TextBubble component
                 welcomeData.map(section => (<TextBubble
                   key={section.key}
