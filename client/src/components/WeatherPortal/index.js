@@ -154,7 +154,7 @@ function WeatherPortal(props) {
 
     return (
         <div className="row weather-row justify-content-center">
-            <div className="col-12 col-sm-12 col-md-5">
+            <div className="col-12 col-sm-12 col-md-6">
                 <label for="zip_code">Zip Code&nbsp;&nbsp;</label>
                 <input ref={zipInputRef} type="text" defaultValue="10001" name="zip_code" onClick={(e) => {
                     if (zipInputRef.current.value === zipInputRef.current.defaultValue) {
@@ -173,7 +173,7 @@ function WeatherPortal(props) {
 
 
 
-            <div className="col-12 col-sm-12 col-md-5">
+            <div className="col-12 col-sm-12 col-md-4">
                 <h1 className="centerWeather">Get your local weather</h1>
             </div>
 
