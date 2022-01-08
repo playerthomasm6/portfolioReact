@@ -22,12 +22,13 @@ function Home() {
       key: "B1",
       titleText: "Hello my name is Thomas Player",
       bodyText: `I am a full stack web developer specializing in the MERN stack.  I created this website to demonstrate some of the skills I haved learned. ===>`
+
     },
     {
       link: "/portfolio",
       key: "B2",
       titleText: "Web Development",
-      bodyText: "  This site is created using React.JS  ===>"
+      bodyText: "This site was created with Reac.JS with a heavy focus on a mobile friendly design.    ===>"
     },
     {
       link: "/graphic-design",
@@ -84,7 +85,7 @@ function Home() {
 
 
       </section>
-      {/* <WeatherPortal /> */}
+      <WeatherPortal />
 
 
 

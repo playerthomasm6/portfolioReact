@@ -1,8 +1,38 @@
 .weather-row {
     color: white;
     background: rgb(108,161,255);
-    background: radial-gradient(circle, rgba(108,161,255,1) 2%, rgba(28,66,255,1) 78%, rgba(197,195,255,1) 100%);
+    background: radial-gradient(circle, rgb(17, 58, 128) 2%, rgb(96, 122, 255) 78%, rgb(175, 173, 255) 100%);
     height: 100%;
     margin: 0 1% 0 1%;
     padding: 1% 1% 1% 1%;
+}
+
+.weatherBox {
+    background-color: rgba(0, 0, 0, 0.192);
+    box-shadow: 0 0 20px rgba(181, 216, 250, 0.76);
+}
+
+.weatherDescriptionBox{
+}
+
+.iconBox{
+    display: grid;
+    padding-top:1%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600;
+    
+    
+}
+
+.icon {
+    text-align: center;
+    margin: auto;
+}
+
+.centerWeather {
+    text-align: center;
+    display: grid;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
