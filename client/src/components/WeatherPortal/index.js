@@ -12,6 +12,7 @@ import TwitterIcon from "../../Images/icons8-twitter-50.png";
 function WeatherPortal(props) {
 
     const [weatherData, setWeatherData] = useState(null);
+    const [weatherButtonPressed, setWeatherButtonPressed] = useState(false);
 
 
     const zipInputRef = useRef();
@@ -64,41 +65,9 @@ function WeatherPortal(props) {
 
     const displayWeather = () => {
 
-        let weatherDataLocal = localStorage.getItem("weatherDataLocal") ? JSON.parse(localStorage.getItem("weatherDataLocal")) : null;
+        if (!weatherData && !weatherButtonPressed) return
 
-        if (!weatherData && !weatherDataLocal) return
-
-        if (weatherDataLocal != null) {
-
-            let icon = weatherDataLocal.weather[0].icon
-            let temperature = kelvinToFahrenheit(weatherDataLocal.main.temp)
-            let feelsLike = kelvinToFahrenheit(weatherDataLocal.main.feels_like)
-            let windSpeed = convertWindSpeedMpsToMph(weatherDataLocal.wind.speed);
-            let windDegree = weatherDataLocal.wind.deg
-            let windDirection = getWindDirection(windDegree)
-            let iconSrc = `http://openweathermap.org/img/wn/${icon}.png`
-            let iconAlt = `${weatherDataLocal.weather[0].description} icon`
-            let cityName = weatherDataLocal.name
-
-            return (
-                <div className="row weatherBox">
-                    <div className="col-4 iconBox">
-                        <p>{cityName}</p>
-                        <img className="icon" src={iconSrc} alt={iconAlt}></img>
-                    </div>
-                    <div className="col-8 weatherDescriptionBox">
-                        <p>Current Weather: {weatherDataLocal.weather[0].description}</p>
-
-                        <p>Current Temp: {temperature}</p>
-                        <p>Feels Like: {feelsLike}</p>
-                        <p>Wind: {windSpeed} mph {windDirection}</p>
-                    </div>
-
-                </div>
-
-
-            )
-        }
+        if (!weatherData && weatherButtonPressed) return <p style={{color: "red"}}>Please Enter Valid Zip Code</p>
         else {
 
             localStorage.setItem("weatherDataLocal", JSON.stringify(weatherData))
@@ -122,7 +91,7 @@ function WeatherPortal(props) {
                         <h6>{cityName}</h6>
                         <img src={iconSrc} alt={iconAlt}></img>
                     </div>
-                    <div classNmae="col-8 weather descriptionBox">
+                    <div className="col-8 weather descriptionBox">
                         <p>Current Weather: {weatherData.weather[0].description}</p>
 
                         <p>Temp: {temperature}</p>
@@ -141,12 +110,28 @@ function WeatherPortal(props) {
 
 
     const handleZipInputEvent = () => {
-        let
-            characters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
-        if (characters.indexOf(zipInputRef)) {
-            console.log("good")
-        } else console.log("not so goood")
         console.log(zipInputRef.current.value)
+        if (zipInputRef.current.value === "") {
+            alert("Please Enter a Valid Zip Code")
+            return
+        }
+        let characters = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+        
+        let zipString = zipInputRef.current.value.toString();
+        let zipArr = zipString.split('');
+
+        if (zipString.length != 5) {
+            alert("Please Enter a Valid Zip Code")
+            return
+        }
+
+        zipArr.forEach(zipstring => {
+            if (zipstring.indexOf(characters) != -1) {
+                alert("Please Enter a Valid Zip Code")
+                return
+            }
+        })
+
         getLocalWeather(zipInputRef.current.value, "US", "8b5240010baf177d08076b9cccba48c3")
     }
 
@@ -155,7 +140,7 @@ function WeatherPortal(props) {
     return (
         <div className="row weather-row justify-content-center">
             <div className="col-12 col-sm-12 col-md-6">
-                <label for="zip_code">Zip Code&nbsp;&nbsp;</label>
+                <label htmlFor="zip_code">Zip Code&nbsp;&nbsp;</label>
                 <input ref={zipInputRef} type="text" defaultValue="10001" name="zip_code" onClick={(e) => {
                     if (zipInputRef.current.value === zipInputRef.current.defaultValue) {
                         zipInputRef.current.value = ""
