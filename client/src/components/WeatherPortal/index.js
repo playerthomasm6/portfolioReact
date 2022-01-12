@@ -119,18 +119,14 @@ function WeatherPortal(props) {
         
         let zipString = zipInputRef.current.value.toString();
         let zipArr = zipString.split('');
+        let characterChecker = [];
+        
 
         if (zipString.length != 5) {
-            alert("Please Enter a Valid Zip Code")
+            alert("Please enter a valid zip code")
             return
         }
 
-        zipArr.forEach(zipstring => {
-            if (zipstring.indexOf(characters) != -1) {
-                alert("Please Enter a Valid Zip Code")
-                return
-            }
-        })
 
         getLocalWeather(zipInputRef.current.value, "US", "8b5240010baf177d08076b9cccba48c3")
     }

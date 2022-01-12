@@ -29,8 +29,6 @@ function Footer(props) {
             
             center">
                 <p>Site by Thomas M. Player</p>
-                <p>Contact</p>
-                <p>Site by Thomas M. Player</p>
             </div>
 
         </div>
