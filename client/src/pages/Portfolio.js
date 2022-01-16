@@ -17,6 +17,7 @@ import ForwardArrow from "../Images/icons8-next-page-64.png"
 import Flashgrid from "../Images/flashgrid_thumbnail.PNG"
 import Canvas from"../components/Canvas";
 import CanvasGravity from"../components/CanvasGravity";
+import PlanetExplorer from "../Images/3dPlanetExplorerThumbnail.PNG"
 
 // React Bootstrap Items
 import {ProgressBar} from 'react-bootstrap';
@@ -29,6 +30,13 @@ function Portfolio(props) {
   const [projectIndex, setprojectIndex] = useState(0) // State for used to set projectData Array current index
 
   const projectData = [ // Data Array which includes all project data... images, descriptions, titles etc.
+    {
+      image: PlanetExplorer,
+      imageAlt: "3d Planet Explorer Thumbnail",
+      url: "https://planet-explorer-3d.herokuapp.com/",
+      title: "3d Planet Explorer",
+      description: "A tool in which we can explore the planets of our solar system in 3D.  This uses real images of each planet maps the image on a 3D model using Three.JS"
+    },
     {
       image: Flashgrid,
       imageAlt: "Flashgrid Thumbnail",

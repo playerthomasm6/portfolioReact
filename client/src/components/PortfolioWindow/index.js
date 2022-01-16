@@ -21,7 +21,7 @@ function PortfolioWindow(props) {
         </div>
 
         <div className="col-sm-7 col-8 image-box-style">
-          <a href={props.url}><img src={props.image} alt={props.imageAlt} className="image-style" /></a>
+          <a href={props.url} target="_blank" rel="noreferrer noopener"><img src={props.image} alt={props.imageAlt} className="image-style" /></a>
         </div>
 
 
