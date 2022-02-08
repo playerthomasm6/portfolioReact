@@ -37,7 +37,7 @@ const chooseColor = (a) => {
                 <div className="col-sm-5 col-10 d-flex boundry">
                     
                     
-                    <div className="image-box">
+                    <div className="image-container">
                         <img src={props.imageSource} alt={props.imageAlt} className="img-thumbnail img-style" style={styles0}></img>
                         
                         

@@ -10,7 +10,7 @@ import NJS_Logo from "../Images/NJsoldiers_logo.png";
 import Northstar_logo from "../Images/Northstar STAR logo version2.png"
 import Rocket_Logo_Outline from "../Images/Rocket-OutLine.png"
 import Rocket_Logo from "../Images/Rocket-No Line.png"
-
+import CoolHarbor from "../Images/claudio-schwarz-BV7kF5aW7KY-unsplash.jpg"
 function Graphic() {
 
   const graphicData = [ // Array which holds graphic design data to display
@@ -40,15 +40,15 @@ function Graphic() {
       title: "Court House Fitness",
       imageSource: CHF_Logo,
       imageAlt: "Court House Fitness Logo",
-      descriptionText: "This graphic was designed for t-shirts to be sold by Court House Fitness"
+      descriptionText: "This graphic was designed for t-shirts to be sold by a fitness center called Court House Fitness"
     },
-    {
-      key: "A5",
-      title: "New Jersey Soldiers",
-      imageSource: NJS_Logo,
-      imageAlt: "New Jersey Soldiers logo",
-      descriptionText: "This graphic was a reskin and recolor of a previous logo design.  The image was created for the purpose of social media posts and emailing."
-    },
+    // {
+    //   key: "A5",
+    //   title: "New Jersey Soldiers",
+    //   imageSource: NJS_Logo,
+    //   imageAlt: "New Jersey Soldiers logo",
+    //   descriptionText: "This graphic was a reskin and recolor of a previous logo design.  The image was created for the purpose of social media posts and emailing."
+    // },
     // {
     //   key: "A6",
     //   title: "PlaceHolder",
@@ -58,8 +58,13 @@ function Graphic() {
     // }
   ];
 
+  const photoAuthor = 1;
+  const graphicBG = {
+    background: `url(${CoolHarbor})`
+  }
+
   return (
-  <div className="graphic-style">
+  <div className="graphic-style" style={graphicBG}>
    <Header/>
     <div className="container-fluid">
       <div className="row">
@@ -81,7 +86,8 @@ function Graphic() {
         />
         ))}
         
-        <div className="col-sm-3 col-3"></div>
+        <div className="col-sm-3 col-3">Photo by <a href="https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudio Schwarz</a> on <a href="https://unsplash.com/@purzlbaum?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </div>
       </div>
     </div>
   <Footer/>

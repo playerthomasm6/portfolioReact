@@ -194,7 +194,7 @@ div::-webkit-scrollbar-thumb {
 
 .graphic-style {
     background-size: 100% 100%;
-        background-image: linear-gradient(to right, rgb(211, 243, 253), rgba(0, 25, 49, 0.774))
+    background-image: linear-gradient(to right, rgb(79, 81, 85),rgb(67, 78, 90))
 }
 
 .title-text {
