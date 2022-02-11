@@ -9,13 +9,9 @@
     padding-top: auto;
     padding-bottom: auto;
     justify-content: center;
+    color: white;
 }
 
 .socialIcons {
     padding: 1% .5% 0 .5%;
-}
-
-a p {
-    color: white;
-    
 }

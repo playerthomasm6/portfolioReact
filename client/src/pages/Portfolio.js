@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useContext, useRef} from "react";
 import DefaultImage from "../Images/150x150.png"
 
-import Nav from "../components/Nav";
 import "./style.css";
 import Footer from"../components/Footer";
 import PortfolioWindow from "../components/PortfolioWindow";

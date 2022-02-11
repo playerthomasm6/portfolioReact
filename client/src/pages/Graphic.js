@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../components/Nav";
 import "./style.css";
 import Footer from"../components/Footer";
 import Header from "../components/Header";
@@ -11,6 +10,9 @@ import Northstar_logo from "../Images/Northstar STAR logo version2.png"
 import Rocket_Logo_Outline from "../Images/Rocket-OutLine.png"
 import Rocket_Logo from "../Images/Rocket-No Line.png"
 import CoolHarbor from "../Images/claudio-schwarz-BV7kF5aW7KY-unsplash.jpg"
+
+import KeyboardArt from "../Images/keyboard.png"
+
 function Graphic() {
 
   const graphicData = [ // Array which holds graphic design data to display
@@ -42,13 +44,13 @@ function Graphic() {
       imageAlt: "Court House Fitness Logo",
       descriptionText: "This graphic was designed for t-shirts to be sold by a fitness center called Court House Fitness"
     },
-    // {
-    //   key: "A5",
-    //   title: "New Jersey Soldiers",
-    //   imageSource: NJS_Logo,
-    //   imageAlt: "New Jersey Soldiers logo",
-    //   descriptionText: "This graphic was a reskin and recolor of a previous logo design.  The image was created for the purpose of social media posts and emailing."
-    // },
+    {
+      key: "A5",
+      title: "Thomas Player Developer",
+      imageSource: KeyboardArt,
+      imageAlt: "Thomas Player Developer Keyboard logo",
+      descriptionText: "This graphic was designed and created for this portfolio website."
+    },
     // {
     //   key: "A6",
     //   title: "PlaceHolder",

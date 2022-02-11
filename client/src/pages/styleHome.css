@@ -1,0 +1,236 @@
+/*HOME PAGE */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+.row-height {
+    padding: auto;
+    height: 30vh;
+    margin-bottom: 3%;
+}
+
+.container-box {
+    margin: 0 0 0 0;
+    padding: 5% 5% 5% 5%;
+    position: relative;
+}
+
+.full-view { /* Makes component take up entire screen */
+    border: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.img-fit {
+    display: grid !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgStyle {
+    height: 15vw;
+}
+
+
+
+.main-info {
+    /* background: linear-gradient(90deg, rgb(19, 21, 22) 0%, rgb(3, 5, 7) 25%,rgb(0, 0, 0) 50%,rgb(0, 0, 0) 75%); */
+    color: rgb(0, 19, 49);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.527);
+    font-family:'Times New Roman', Times, serif;
+    box-shadow: inset 0px 0px 30px rgba(7, 89, 136, 0.363);
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius:  3%;
+    padding: 3%;
+    margin: auto 2% auto 2% ;
+    display: grid;
+    
+}
+
+.main-info p a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.main-info p a:hover {
+    color: inherit;
+    text-decoration: underline;
+    text-shadow: 0 0 2px rgba(0, 183, 255, 0.527);
+}
+
+
+
+.main-info1 {
+    position: relative;
+    height: 100%;
+    box-shadow: inset 0px 0px 30px rgba(7, 89, 136, 0.616);
+}
+
+
+.scroll-row {
+    padding-bottom: 5%;
+}
+
+.main-image-container {
+    background-color: rgb(255, 0, 0);
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    
+}
+
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 575.98px) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: .9em;
+        padding: 1% 1% 1% 1%;
+    }
+
+    
+    #logo-middle {
+        display: none;
+
+    }
+
+    #logo-bottom {
+        display: none;
+    }
+
+    .img-fit {
+        display: none !important;
+    }
+    .imgStyle {
+        height: 1px;
+        width: 1px;
+    }
+
+    .row-height {
+        padding: auto;
+        background: radial-gradient(rgba(128, 128, 128, 0.185), rgba(0, 55, 175, 0.034));
+        height: auto;
+        margin-bottom: 3%;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        padding: 1% 2% 1% 2%;
+    }
+
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.8em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        padding: 1% 2% 1% 2%;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        padding: .5% 1% .5% 1%;
+    }
+
+    .img-fit {
+        display: grid !important;
+        padding: auto 0 auto 0;
+        align-content: center;
+    }
+
+    .imgStyle {
+        height: 15vw;
+        margin: auto 0 auto 0;
+    }
+
+    .row-height {
+    
+        padding: auto;
+        background: radial-gradient(rgba(128, 128, 128, 0.185), rgba(0, 55, 175, 0.034));
+        height: 40vh;
+        margin-bottom: 3%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.2em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3em;
+        padding: 1% 2% 1% 2%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .main-info-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+        padding: 1% 2% 1% 2%;
+    }
+    
+    
+    .main-info-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.4em;
+        padding: 1% 2% 1% 2%;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

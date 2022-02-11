@@ -2,6 +2,7 @@
     --profile-size: 60%
 }
 
+
 .header-container { /* sets height relitive to parent container */
     
     background: repeating-linear-gradient(90deg, rgba(22, 22, 22, 0.705) 0%, rgba(0, 0, 0, 0.664) 1%),
@@ -10,7 +11,7 @@
                 repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.568) 35%, rgba(0, 0, 0, 0.52) 40%);
     color: white;
     margin: 0;
-    padding: 1%;
+    padding: 2%;
 }
 
 .row-height {
