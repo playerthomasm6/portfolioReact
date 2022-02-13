@@ -13,7 +13,8 @@ import KeyboardImg from "../Images/keyboard-blue-splash.png";
 import KeyboardTransparent from "../Images/blueKeyboardTransparent.PNG";
 import Logo03 from "../Images/Logo-03.png";
 import StarBG from "../Images/daniel-leone-g30P1zcOzXo-unsplash.jpg"
-import KeyboardArt from "../Images/keyboard.png"
+import KeyboardArt from "../Images/Keyboard_3D_Transparent.png"
+import MouseArt from "../Images/Mouse_transparent.png"
 
 function Home() {
 
@@ -87,7 +88,7 @@ function Home() {
 
       <div className="row justify-content-center row-height">
         <div className="col-sm-3 d-none d-sm-block img-fit">
-          <img className="imgStyle" id="logo-bottom"src={KeyboardTransparent}></img>
+          <img className="imgStyle" id="logo-bottom"src={MouseArt}></img>
         </div>
 
         <div className="col-sm-7 col-12 main-info">

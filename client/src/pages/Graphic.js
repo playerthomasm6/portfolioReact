@@ -11,7 +11,8 @@ import Rocket_Logo_Outline from "../Images/Rocket-OutLine.png"
 import Rocket_Logo from "../Images/Rocket-No Line.png"
 import CoolHarbor from "../Images/claudio-schwarz-BV7kF5aW7KY-unsplash.jpg"
 
-import KeyboardArt from "../Images/keyboard.png"
+import KeyboardArt from "../Images/Keyboard_3D_Transparent.png"
+import MouseArt from "../Images/Mouse_transparent.png"
 
 function Graphic() {
 
@@ -46,18 +47,18 @@ function Graphic() {
     },
     {
       key: "A5",
-      title: "Thomas Player Developer",
+      title: "TP Developer - Keyboard",
       imageSource: KeyboardArt,
       imageAlt: "Thomas Player Developer Keyboard logo",
-      descriptionText: "This graphic was designed and created for this portfolio website."
+      descriptionText: "This graphic was designed for my portfolio website."
     },
-    // {
-    //   key: "A6",
-    //   title: "PlaceHolder",
-    //   imageSource: PlaceHolder150x150,
-    //   imageAlt: "Placeholder Image",
-    //   descriptionText: "This is placeholder text until I design more graphics professionally"
-    // }
+    {
+      key: "A6",
+      title: "TP Developer - Mouse",
+      imageSource: MouseArt,
+      imageAlt: "Graphic depiction of a computer mouse",
+      descriptionText: "This graphic was designed for my portfolio website."
+    }
   ];
 
   const photoAuthor = 1;
