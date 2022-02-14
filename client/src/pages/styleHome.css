@@ -103,15 +103,6 @@ No media query for `xs` since this is the default in Bootstrap */
         padding: 1% 1% 1% 1%;
     }
 
-    
-    #logo-middle {
-        display: none;
-
-    }
-
-    #logo-bottom {
-        display: none;
-    }
 
     .img-fit {
         display: none !important;
@@ -190,9 +181,7 @@ No media query for `xs` since this is the default in Bootstrap */
     }
 
     .row-height {
-    
         padding: auto;
-        background: radial-gradient(rgba(128, 128, 128, 0.185), rgba(0, 55, 175, 0.034));
         height: 40vh;
         margin-bottom: 3%;
     }

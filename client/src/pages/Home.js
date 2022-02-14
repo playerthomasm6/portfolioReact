@@ -23,16 +23,16 @@ function Home() {
       link: "/about",
       linkText: "Click here to get to know me more...",
       key: "B1",
-      titleText: "Hello my name is Thomas Player",
-      bodyText: `I am a full stack web developer specializing in the MERN stack. I created this website to demonstrate some of the skills and technologies I haved learned.  `
+      titleText: "Full Service Web Development",
+      bodyText: `My name is Thomas Player, I am a passionate web developer/designer, and graphic designer.`
 
     },
     {
       link: "/portfolio",
-      linkText: "Click here to check out some of my web creations",
+      linkText: "Click here to check out some of my websites",
       key: "B2",
       titleText: "Web Development",
-      bodyText: "This website was created with Node.JS, React.JS and many more great technologies.  "
+      bodyText: "I am a full stack web developer specializing in Node.JS backend/server side code with a React.JS front end. "
 
     },
     {
@@ -40,7 +40,7 @@ function Home() {
       linkText: "Click here to see some of my graphical design art",
       key: "B3",
       titleText: "Graphic Design",
-      bodyText: "I enjoy creating graphics and logos for my websites as well as for merchandise. I like to use open source software such as GIMP, Inkscape and Lunacy.  In addition to creating graphics, I also enjoy photo editing/manipulation. "
+      bodyText: "I enjoy creating graphics and logos for my websites as well as for merchandise. I like to use open source software such as GIMP, Inkscape and Lunacy."
     }
   ]
 
@@ -73,22 +73,23 @@ function Home() {
 
       <div className="row justify-content-center row-height">
         <div className="col-sm-7 main-info">
+
         <h1 className="main-info-title">{welcomeData[1].titleText}</h1>
             <p className="main-info-body">{welcomeData[1].bodyText}<br/>
             <a href={welcomeData[1].link}>{welcomeData[1].linkText}</a></p>
 
         </div>
 
-        <div className="col-sm-3 d-none d-sm-block img-fit">
-          <img className="imgStyle" id="logo-middle" src={KeyboardArt}></img>
+      <div className="col-sm-3 col-12 img-fit">
+          <img className="imgStyle" src={KeyboardArt}></img>
         </div>
       </div>
       
 
 
       <div className="row justify-content-center row-height">
-        <div className="col-sm-3 d-none d-sm-block img-fit">
-          <img className="imgStyle" id="logo-bottom"src={MouseArt}></img>
+      <div className="col-sm-3 col-12 img-fit">
+          <img className="imgStyle" src={MouseArt}></img>
         </div>
 
         <div className="col-sm-7 col-12 main-info">
